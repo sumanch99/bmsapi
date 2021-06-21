@@ -1,4 +1,5 @@
 To Do - 
 
-1. Account to account transfer
-2. atm corner
+1. atm corner
+2. FD
+3. RD
