@@ -7,7 +7,6 @@ import com.cts.bms.dao.AccountDao;
 import com.cts.bms.dao.CustomerDao;
 import com.cts.bms.exception.AdhaarNumberNotFoundException;
 import com.cts.bms.exception.BmsException;
-import com.cts.bms.model.Account;
 import com.cts.bms.model.Customer;
 
 @Service

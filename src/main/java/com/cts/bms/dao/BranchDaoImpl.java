@@ -7,13 +7,9 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.cts.bms.dto.AccountMapper;
 import com.cts.bms.dto.BranchMapper;
-import com.cts.bms.dto.CustomerMapper;
 import com.cts.bms.exception.BmsException;
-import com.cts.bms.model.Account;
 import com.cts.bms.model.Branch;
-import com.cts.bms.model.Customer;
 
 @Repository
 public class BranchDaoImpl implements BranchDao {

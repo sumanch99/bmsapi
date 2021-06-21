@@ -1,7 +1,5 @@
 package com.cts.bms.util;
 
-import java.util.Date;
-
 import com.cts.bms.model.FixedDeposit;
 
 public class FixedDepositUtility {

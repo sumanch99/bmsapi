@@ -5,7 +5,6 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.cts.bms.model.Account;
 import com.cts.bms.model.Branch;
 
 public class BranchMapper implements RowMapper<Branch> {

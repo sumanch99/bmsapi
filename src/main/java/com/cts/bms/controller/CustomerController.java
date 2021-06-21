@@ -1,17 +1,18 @@
 package com.cts.bms.controller;
 
 import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.bms.exception.AdhaarNumberNotFoundException;
-import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Customer;
 import com.cts.bms.response.CustomJsonResponse;
 import com.cts.bms.service.CustomerService;
@@ -19,6 +20,7 @@ import com.cts.bms.service.CustomerService;
 /*
  * Rest Controller to map all requests coming with customer prefix.
  */
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {

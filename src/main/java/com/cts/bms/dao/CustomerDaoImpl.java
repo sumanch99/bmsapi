@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import com.cts.bms.dto.AccountMapper;
 import com.cts.bms.dto.LoanMapper;
-import com.cts.bms.exception.AdhaarNumberNotFoundException;
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
 import com.cts.bms.model.Customer;

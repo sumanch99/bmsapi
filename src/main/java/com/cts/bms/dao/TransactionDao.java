@@ -2,7 +2,6 @@ package com.cts.bms.dao;
 
 import java.util.List;
 
-import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
 import com.cts.bms.model.Transaction;
 

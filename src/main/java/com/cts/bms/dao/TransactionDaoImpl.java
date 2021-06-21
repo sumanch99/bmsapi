@@ -7,11 +7,8 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.cts.bms.dto.LoanMapper;
 import com.cts.bms.dto.TransactionMapper;
-import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
-import com.cts.bms.model.Loan;
 import com.cts.bms.model.Transaction;
 
 @Repository
