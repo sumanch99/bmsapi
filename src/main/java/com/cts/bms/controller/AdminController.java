@@ -20,9 +20,11 @@ import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
 import com.cts.bms.model.InterestRate;
 import com.cts.bms.model.Loan;
+import com.cts.bms.model.Transaction;
 import com.cts.bms.response.CustomJsonResponse;
 import com.cts.bms.service.AdminService;
 import com.cts.bms.service.LoanService;
+import com.cts.bms.service.TransactionService;
 
 @RestController
 @RequestMapping("/admin")
@@ -33,6 +35,9 @@ public class AdminController {
 	
 	@Autowired
 	LoanService loanService;
+	
+	@Autowired
+	TransactionService transactionService;
 	
 	@GetMapping("/customer-list") 
 	public ResponseEntity<Object> getAllCustomers() {
@@ -107,5 +112,14 @@ public class AdminController {
 	public ResponseEntity<Object> getAllApprovedLoans() {
 		List<Loan> loans = loanService.getAllApprovedLoans();
 		return CustomJsonResponse.generateResponse("All approved loans", HttpStatus.OK,loans);
+	}
+	
+	@GetMapping("/all-transactions") 
+	public ResponseEntity<Object> getAllTransactions() {
+		List<Transaction> transactions = transactionService.viewAllTransactions();
+		if(transactions!=null) {
+			return CustomJsonResponse.generateResponse("All transactions", HttpStatus.OK,transactions);
+		}
+		return CustomJsonResponse.generateResponse("Transactions cannot be fetched", HttpStatus.CONFLICT,transactions);
 	}
 }

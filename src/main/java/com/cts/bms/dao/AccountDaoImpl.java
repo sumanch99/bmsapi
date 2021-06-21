@@ -44,8 +44,11 @@ public class AccountDaoImpl implements AccountDao {
 	@Override
 	public boolean depositIntoAccount(Account account, double amount) throws BmsException {
 		String query = "update account set balance = balance + ? where account_no = ?";
+		String query2 = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
+		"values(?,?,?,?,?)";
 		try {
 			jdbcTemplate.update(query, new Object[] { amount, account.getAccNo() });
+			jdbcTemplate.update(query2, new Object[] { account.getAccNo(),null,amount,true,false });
 			return true;
 		} catch (DataAccessException e) {
 			throw new BmsException("Deposit not possible");
@@ -55,8 +58,11 @@ public class AccountDaoImpl implements AccountDao {
 	@Override
 	public boolean withdrawFromAccount(Account account, double amount) throws BmsException {
 		String query = "update account set balance = balance - ? where account_no = ?";
+		String query2 = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
+				"values(?,?,?,?,?)";
 		try {
 			jdbcTemplate.update(query, new Object[] { amount, account.getAccNo() });
+			jdbcTemplate.update(query2, new Object[] { account.getAccNo(),null,amount,false,false });
 			return true;
 		} catch (DataAccessException e) {
 			throw new BmsException("Withdraw not possible");
@@ -74,6 +80,30 @@ public class AccountDaoImpl implements AccountDao {
 			return account;
 		} catch (DataAccessException e) {
 			return null;
+		}
+	}
+
+	@Override
+	public boolean accountToAccountTransfer(Account payeeAccount, Account receivingAccount, double amount) {
+		
+		try {
+			String query = "update account set balance = balance - ? where account_no = ?";
+			jdbcTemplate.update(query, new Object[] { amount, payeeAccount.getAccNo() });
+			query = "update account set balance = balance + ? where account_no = ?";
+			jdbcTemplate.update(query, new Object[] { amount, receivingAccount.getAccNo() });
+			query = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
+					"values(?,?,?,?,?)";
+			jdbcTemplate.update(query, new Object[] {
+					payeeAccount.getAccNo(), 
+					receivingAccount.getAccNo(),
+					amount, 
+					null,
+					false
+			});
+			return true;
+		}catch(DataAccessException e) {
+			e.printStackTrace();
+			return false;
 		}
 	}
 

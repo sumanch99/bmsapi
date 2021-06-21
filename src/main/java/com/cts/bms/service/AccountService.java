@@ -32,14 +32,18 @@ public class AccountService {
 		}
 	}
 	
-	public boolean sendAmountToAccount(Account payeeAccount,Account receivingAccount,double amount) {
-		try {
-			dao.depositIntoAccount(receivingAccount, amount);
-			dao.withdrawFromAccount(payeeAccount, amount);
-			return true;
-		} catch (BmsException e) {
-			return false;
+	public boolean accountToAccountTransfer(long payeeAccountNo,long receivingAccountNo,double amount) throws BmsException {
+		
+		Account receivingAccount = dao.getAccountWithAccountNumber(receivingAccountNo);
+		Account payeeAccount = dao.getAccountWithAccountNumber(payeeAccountNo);
+		if(receivingAccount!=null && payeeAccount!=null) {
+			if(payeeAccount.getBalance()<amount) {
+				throw new BmsException("Insufficient balance");
+			}
+			return dao.accountToAccountTransfer(payeeAccount, receivingAccount, amount);
 		}
+		return false;
+			
 	}
 	
 	public Account checkBalance(long accountNo) {

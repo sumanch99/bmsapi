@@ -1,9 +1,14 @@
-/*
- * package com.cts.bms.dao;
- * 
- * import com.cts.bms.exception.BmsException;
- * 
- * public interface TransactionDao { public boolean setTransactionData(long
- * payeeAccountNo,long recivingAccountNo,double amount) throws BmsException;
- * public List<Transaction> showTransactionData() }
- */
+package com.cts.bms.dao;
+
+import java.util.List;
+
+import com.cts.bms.exception.BmsException;
+import com.cts.bms.model.Account;
+import com.cts.bms.model.Transaction;
+
+public interface TransactionDao {
+	
+	public List<Transaction> viewAllTransaction(Account account);
+	public List<Transaction> viewAllTransaction();
+	
+}

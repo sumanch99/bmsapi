@@ -16,10 +16,7 @@ public interface AccountDao {
 
 	public boolean withdrawFromAccount(Account account, double amount) throws BmsException;
 	
-	/*
-	 * public boolean acntToAcntTransfer(Account payeeAccount,Account
-	 * receivingAccount,double amount);
-	 * 
-	 */
+	 public boolean accountToAccountTransfer(Account payeeAccount,
+			 							Account receivingAccount,double amount);
 	public Account getAccountWithAccountNumber(long accountNo);
 }
