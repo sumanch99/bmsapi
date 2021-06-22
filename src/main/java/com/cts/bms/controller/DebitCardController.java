@@ -46,7 +46,7 @@ public class DebitCardController {
 		return CustomJsonResponse.generateResponse("DebitCard approval failed", HttpStatus.EXPECTATION_FAILED, card);
 	}
 	 
-	@DeleteMapping("/admin/reject-debit-card")
+	@PatchMapping("/admin/reject-debit-card")
 	public ResponseEntity<Object> rejectDebitCard(@RequestBody DebitCard card) {
 		if(cardService.rejectDebitCard(card)) {
 			return CustomJsonResponse.generateResponse("Rejected Debit Card successfully", HttpStatus.OK, card);
