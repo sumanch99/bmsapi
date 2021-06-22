@@ -22,6 +22,7 @@ import com.cts.bms.model.Customer;
 import com.cts.bms.model.Loan;
 import com.cts.bms.model.Transaction;
 import com.cts.bms.response.CustomJsonResponse;
+import com.cts.bms.service.AccountService;
 import com.cts.bms.service.AdminService;
 import com.cts.bms.service.LoanService;
 import com.cts.bms.service.TransactionService;
@@ -39,6 +40,9 @@ public class AdminController {
 	
 	@Autowired
 	TransactionService transactionService;
+	
+	@Autowired
+	AccountService accountService;
 	
 	@GetMapping("/customer-list") 
 	public ResponseEntity<Object> getAllCustomers() {
@@ -122,5 +126,14 @@ public class AdminController {
 			return CustomJsonResponse.generateResponse("All transactions", HttpStatus.OK,transactions);
 		}
 		return CustomJsonResponse.generateResponse("Transactions cannot be fetched", HttpStatus.CONFLICT,transactions);
+	}
+	
+	@GetMapping("/view-account/{accountNo}") 
+	public ResponseEntity<Object> viewAccountWithAccountNo(@PathVariable long accountNo) {
+		Account account = accountService.checkBalance(accountNo);
+		if(account!=null) {
+			return CustomJsonResponse.generateResponse("Account details fetched", HttpStatus.OK,account);
+		}
+		return CustomJsonResponse.generateResponse("Account doesnot exists", HttpStatus.OK,null);
 	}
 }

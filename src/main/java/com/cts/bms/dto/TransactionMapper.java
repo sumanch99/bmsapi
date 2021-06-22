@@ -15,7 +15,7 @@ public class TransactionMapper implements RowMapper<Transaction> {
 		transaction.setFromAccount(rs.getLong("from_account"));
 		transaction.setToAccount(rs.getLong("to_account"));
 		transaction.setAmount(rs.getDouble("amount"));
-		transaction.setDate(rs.getDate("date"));
+		transaction.setDate(rs.getTimestamp("date").toString());
 		transaction.setFlag(rs.getBoolean("flag"));
 		transaction.setAtmFlag(rs.getBoolean("atm_flag"));
 		return transaction;

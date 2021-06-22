@@ -1,12 +1,10 @@
 package com.cts.bms.model;
 
-import java.sql.Date;
-
 public class Transaction {
 	private long fromAccount;
 	private long toAccount;
 	private double amount;
-	private Date date;
+	private String date;
 	private boolean flag;
 	private boolean atmFlag;
 	
@@ -15,7 +13,7 @@ public class Transaction {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Transaction(long fromAccount, long toAccount, double amount, Date date, boolean flag, boolean atmFlag) {
+	public Transaction(long fromAccount, long toAccount, double amount, String date, boolean flag, boolean atmFlag) {
 		super();
 		this.fromAccount = fromAccount;
 		this.toAccount = toAccount;
@@ -55,11 +53,11 @@ public class Transaction {
 		this.amount = amount;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
@@ -78,6 +76,8 @@ public class Transaction {
 	public void setAtmFlag(boolean atmFlag) {
 		this.atmFlag = atmFlag;
 	}
+
+	
 	
 	
 	
