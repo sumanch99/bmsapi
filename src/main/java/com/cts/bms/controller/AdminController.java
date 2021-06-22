@@ -99,12 +99,12 @@ public class AdminController {
 		return CustomJsonResponse.generateResponse("Loan cannot be granted", HttpStatus.EXPECTATION_FAILED, loan);
 	}
 	
-	@DeleteMapping("/reject-loan/{ifscCode}") 
-	public ResponseEntity<Object> rejectLoan(@RequestBody Loan loan,@PathVariable(required = false) String ifscCode) {
-		if(service.deleteLoanRequest(loan.getLoan_id())) {
-			return CustomJsonResponse.generateResponse("Loan successfully rejected", HttpStatus.OK, loan);
+	@DeleteMapping("/reject-loan/{loanId}") 
+	public ResponseEntity<Object> rejectLoan(@PathVariable long loanId) {
+		if(service.deleteLoanRequest(loanId)) {
+			return CustomJsonResponse.generateResponse("Loan successfully rejected", HttpStatus.OK, loanId);
 		}
-		return CustomJsonResponse.generateResponse("Loan cannot be rejected", HttpStatus.EXPECTATION_FAILED, loan);
+		return CustomJsonResponse.generateResponse("Loan cannot be rejected", HttpStatus.EXPECTATION_FAILED, loanId);
 	}
 	
 	@GetMapping("/pending-loans") 
