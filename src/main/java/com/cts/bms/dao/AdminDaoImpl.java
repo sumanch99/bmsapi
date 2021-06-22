@@ -9,13 +9,14 @@ import org.springframework.stereotype.Repository;
 
 import com.cts.bms.dto.AccountMapper;
 import com.cts.bms.dto.CustomerMapper;
+import com.cts.bms.dto.DebitCardMapper;
 import com.cts.bms.dto.InterestRateMapper;
 import com.cts.bms.dto.LoanMapper;
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
 import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
-
+import com.cts.bms.model.DebitCard;
 import com.cts.bms.model.InterestRate;
 import com.cts.bms.model.Loan;
 
@@ -73,7 +74,7 @@ public class AdminDaoImpl implements AdminDao {
 	@Override
 	public boolean approveLoanRequest(long loanId, boolean isLoanApproved) throws BmsException {
 		String sqlQuery = "update loan set approved = ? where loan_id = ? ";
-		
+
 		try {
 			jdbcTemplate.update(sqlQuery, new Object[] { isLoanApproved, loanId });
 			return true;
@@ -120,9 +121,9 @@ public class AdminDaoImpl implements AdminDao {
 		String sqlQuery = "select * from loan where approved = 1";
 		List<Loan> loans = jdbcTemplate.query(sqlQuery, new LoanMapper());
 		return loans;
-		
+
 	}
- 
+
 	@Override
 	public boolean deleteRejectedLoanRequest(long loanId) throws BmsException {
 		String query = "delete from loan where loan_id = " + loanId;
@@ -136,19 +137,49 @@ public class AdminDaoImpl implements AdminDao {
 
 	@Override
 	public List<Account> viewAllAccountsOfCustomer(Customer customer) {
-		String sqlQuery = "select * from account where adhaar_no = "+customer.getAdhaarNo();
+		String sqlQuery = "select * from account where adhaar_no = " + customer.getAdhaarNo();
 		List<Account> accounts = jdbcTemplate.query(sqlQuery, new AccountMapper());
 		return accounts;
 	}
 
 	@Override
 	public List<InterestRate> viewAllPlans() {
-		
+
 		String query = "select * from interest_rate";
 		List<InterestRate> plans = jdbcTemplate.query(query, new InterestRateMapper());
 		return plans;
 	}
-	
-	
+
+	public List<DebitCard> viewAllPendingDebitCards() throws BmsException {
+		String query = "select * from debit_card where approved = " + false;
+		try {
+			List<DebitCard> pendingCards = jdbcTemplate.query(query, new DebitCardMapper());
+			return pendingCards;
+		} catch (DataAccessException e) {  
+			throw new BmsException("Selection failed");
+		}
+	}
+
+	public boolean approveDebitCard(DebitCard card) throws BmsException {
+
+		String query = "update debit_card set approved = ? where card_no = ?";
+		try {
+			jdbcTemplate.update(query, new Object[] { true, card.getCardNo() });
+			return true;
+		} catch (DataAccessException e) {
+			throw new BmsException("Updation failed");
+		}
+	}
+
+	public boolean deleteRejectedDebitCard(DebitCard card) throws BmsException {
+
+		String query = "delete from debit_card where card_no = ?";
+		try {
+			jdbcTemplate.update(query, new Object[] { card.getCardNo() });
+			return true;
+		} catch (DataAccessException e) {
+			throw new BmsException("Deletion failed");
+		}
+	}
 
 }

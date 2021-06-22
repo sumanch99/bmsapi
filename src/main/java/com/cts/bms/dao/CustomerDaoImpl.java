@@ -8,10 +8,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.cts.bms.dto.AccountMapper;
+import com.cts.bms.dto.DebitCardMapper;
 import com.cts.bms.dto.LoanMapper;
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
 import com.cts.bms.model.Customer;
+import com.cts.bms.model.DebitCard;
 import com.cts.bms.model.FixedDeposit;
 import com.cts.bms.model.Loan;
 
@@ -98,6 +100,36 @@ public class CustomerDaoImpl implements CustomerDao {
 		
 		List<Loan> approvedLoans = jdbcTemplate.query(sqlQuery, new LoanMapper());
 		return approvedLoans;
+	}
+
+	@Override
+	public boolean applyForDebitCard(DebitCard debitCard) throws BmsException {
+		
+		String query = "insert into debit_card(pin, cvv_no, account_no) values(?,?,?)";
+		try {
+			jdbcTemplate.update(query, new Object[] {
+					debitCard.getPin(),
+					debitCard.getCvvNo(),
+					debitCard.getAccountNo()
+			});
+			return true;
+		}catch(DataAccessException e) {
+			throw new BmsException("Insertion falied");
+		}
+	}
+	
+	@SuppressWarnings("deprecation")
+	public List<DebitCard> viewAllApprovedDebitCards(Account account) throws BmsException{
+		String query = "select * from debit_card where approved = ? and account_no = ?";
+		try {
+			List<DebitCard> approvedCards = jdbcTemplate.query(query, new Object[] {
+					true,
+					account.getAccNo()
+			},new DebitCardMapper());
+			return approvedCards;
+		}catch(DataAccessException e) {
+			throw new BmsException("Selection falied");
+		}
 	}
 
 }

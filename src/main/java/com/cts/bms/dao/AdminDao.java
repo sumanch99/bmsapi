@@ -6,6 +6,7 @@ import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
 import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
+import com.cts.bms.model.DebitCard;
 import com.cts.bms.model.InterestRate;
 import com.cts.bms.model.Loan;
 
@@ -34,5 +35,11 @@ public interface AdminDao {
 	public List<Account> viewAllAccountsOfCustomer(Customer customer);
 	
 	public List<InterestRate> viewAllPlans();
+	
+	public List<DebitCard> viewAllPendingDebitCards() throws BmsException;
+	
+	public boolean approveDebitCard(DebitCard card) throws BmsException;
+	  
+	public boolean deleteRejectedDebitCard(DebitCard card) throws BmsException;
 
 }
