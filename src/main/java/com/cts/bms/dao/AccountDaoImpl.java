@@ -70,7 +70,21 @@ public class AccountDaoImpl implements AccountDao {
 		}
 
 	}
+	
+	@Override
+	public boolean withDrawThroughDebitCard(Account account,double amount) throws BmsException{
+		String query = "update account set balance = balance - ? where account_no = ?";
+		String query2 = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
+				"values(?,?,?,?,?)";
+		try {
+			jdbcTemplate.update(query, new Object[] { amount, account.getAccNo() });
+			jdbcTemplate.update(query2, new Object[] { account.getAccNo(),null,amount,false,true });
+			return true;
+		} catch (DataAccessException e) {
+			throw new BmsException("ATM Withdraw not possible");
 
+		}
+	}
 	
 	@Override
 	public Account getAccountWithAccountNumber(long accountNo) {

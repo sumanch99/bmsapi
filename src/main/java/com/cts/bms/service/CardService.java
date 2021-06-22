@@ -83,4 +83,8 @@ public class CardService {
 			return null;
 		}
 	}
+	
+	public DebitCard getDebitCard(long cardNo, int cvv,int pin) {
+		return dao.getDebitCard(cardNo, cvv, pin);
+	}
 }

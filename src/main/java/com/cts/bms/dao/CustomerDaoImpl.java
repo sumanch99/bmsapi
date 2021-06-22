@@ -96,7 +96,7 @@ public class CustomerDaoImpl implements CustomerDao {
 		"select * from loan " 
 		+"where account_no in "
 		+"(select account_no from account inner join customer where userid='"+userId+"') "
-		+"and approved=true";
+		+"and approved=true order by loan_id desc ";
 		
 		List<Loan> approvedLoans = jdbcTemplate.query(sqlQuery, new LoanMapper());
 		return approvedLoans;
@@ -118,6 +118,7 @@ public class CustomerDaoImpl implements CustomerDao {
 		}
 	}
 	
+	@Override
 	@SuppressWarnings("deprecation")
 	public List<DebitCard> viewAllApprovedDebitCards(Account account) throws BmsException{
 		String query = "select * from debit_card where approved = ? and account_no = ?";
@@ -129,6 +130,23 @@ public class CustomerDaoImpl implements CustomerDao {
 			return approvedCards;
 		}catch(DataAccessException e) {
 			throw new BmsException("Selection falied");
+		}
+	}
+	
+	@Override
+	@SuppressWarnings("deprecation")
+	public DebitCard getDebitCard(long cardNo,int cvvNo,int pin) {
+		String query = "select * from debit_card where card_no=? and pin=? and cvv_no=? and approved = ?";
+		try {
+			DebitCard debitCard = jdbcTemplate.queryForObject(query, new Object[] {
+					cardNo,
+					pin,
+					cvvNo,
+					true
+			}, new DebitCardMapper());
+			return debitCard;
+		}catch(DataAccessException e) {
+			return null;
 		}
 	}
 

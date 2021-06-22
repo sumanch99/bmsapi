@@ -12,5 +12,5 @@ public interface BranchDao {
 	
 	public List<Branch> getAllBranches();
 	
-	public Branch getBranch(String ifscCode);
+	public Branch getBranch(String ifscCode);  
 }

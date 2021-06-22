@@ -40,12 +40,13 @@ public class BranchDaoImpl implements BranchDao {
 
 	@Override
 	public List<Branch> getAllBranches() {
-		String query = "select * from branch";
+		String query = "select * from branch order by branch_name";
 		List<Branch> branches = jdbcTemplate.query(query, new BranchMapper());
 		return branches;
 	}
 	
-	public Branch getBranch(String ifscCode) {
+	@Override
+	public Branch getBranch(String ifscCode) {  
 		String query = "select * from branch where ifsc_code = '"+ifscCode+"'";
 		try {
 			Branch branch = jdbcTemplate.queryForObject(query, new BranchMapper());

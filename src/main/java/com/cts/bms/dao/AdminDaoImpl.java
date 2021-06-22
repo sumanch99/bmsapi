@@ -28,7 +28,7 @@ public class AdminDaoImpl implements AdminDao {
 
 	@Override
 	public List<Customer> viewAllCustomer() {
-		String sqlQuery = "select * from customer where approved=1";
+		String sqlQuery = "select * from customer where approved=1 order by fname,lname";
 		List<Customer> customers = jdbcTemplate.query(sqlQuery, new CustomerMapper());
 		return customers;
 	}
@@ -111,14 +111,14 @@ public class AdminDaoImpl implements AdminDao {
 
 	@Override
 	public List<Loan> viewAllPendingLoanRequests() {
-		String sqlQuery = "select * from loan where approved = 0";
+		String sqlQuery = "select * from loan where approved = 0 order by loan_id desc";
 		List<Loan> pendingLoans = jdbcTemplate.query(sqlQuery, new LoanMapper());
 		return pendingLoans;
 	}
 
 	@Override
 	public List<Loan> viewAllApprovedLoans() {
-		String sqlQuery = "select * from loan where approved = 1";
+		String sqlQuery = "select * from loan where approved = 1 order by loan_id desc";
 		List<Loan> loans = jdbcTemplate.query(sqlQuery, new LoanMapper());
 		return loans;
 
@@ -151,7 +151,7 @@ public class AdminDaoImpl implements AdminDao {
 	}
 
 	public List<DebitCard> viewAllPendingDebitCards() throws BmsException {
-		String query = "select * from debit_card where approved = " + false;
+		String query = "select * from debit_card where approved = " + false + " order by card_no desc";
 		try {
 			List<DebitCard> pendingCards = jdbcTemplate.query(query, new DebitCardMapper());
 			return pendingCards;

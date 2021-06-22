@@ -21,7 +21,7 @@ public class TransactionDaoImpl implements TransactionDao {
 	@Override
 	public List<Transaction> viewAllTransaction(Account account) {
 		try {
-			String query = "select * from transaction where from_account = ? or to_account = ?";
+			String query = "select * from transaction where from_account = ? or to_account = ? order by date desc";
 			List<Transaction> transactions = jdbcTemplate.query(query,new Object[] {
 					account.getAccNo(),
 					account.getAccNo()
@@ -37,7 +37,7 @@ public class TransactionDaoImpl implements TransactionDao {
 	@Override
 	public List<Transaction> viewAllTransaction() {
 		try {
-			String query = "select * from transaction";
+			String query = "select * from transaction order by date desc";
 			List<Transaction> transactions = jdbcTemplate.query(query, new TransactionMapper());
 			return transactions;
 		}catch(DataAccessException e) {

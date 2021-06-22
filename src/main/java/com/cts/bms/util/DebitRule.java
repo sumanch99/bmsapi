@@ -7,7 +7,7 @@ import com.cts.bms.model.DebitCard;
 
 public class DebitRule {
 	
-	private static final double MIN_BALANCE = 1000 ;
+	private static final double MIN_BALANCE = 999 ;
 	
 	public static boolean isDebitCardPossible(DebitCard card, Account account) {
 		if(card.getAccountNo()==account.getAccNo()) {
