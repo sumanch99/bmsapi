@@ -99,7 +99,7 @@ public class AdminController {
 		return CustomJsonResponse.generateResponse("Loan cannot be granted", HttpStatus.EXPECTATION_FAILED, loan);
 	}
 	
-	@PatchMapping("/reject-loan/{ifscCode}") 
+	@DeleteMapping("/reject-loan/{ifscCode}") 
 	public ResponseEntity<Object> rejectLoan(@RequestBody Loan loan,@PathVariable(required = false) String ifscCode) {
 		if(service.deleteLoanRequest(loan.getLoan_id())) {
 			return CustomJsonResponse.generateResponse("Loan successfully rejected", HttpStatus.OK, loan);
