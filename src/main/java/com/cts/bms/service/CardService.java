@@ -51,9 +51,9 @@ public class CardService {
 		return false;
 	}
 	
-	public boolean rejectDebitCard(DebitCard card) {
+	public boolean rejectDebitCard(long cardNo) {
 		try {
-			if(adminDao.deleteRejectedDebitCard(card)) {
+			if(adminDao.deleteRejectedDebitCard(cardNo)) {
 				return true;
 			}
 		}catch(BmsException e) {

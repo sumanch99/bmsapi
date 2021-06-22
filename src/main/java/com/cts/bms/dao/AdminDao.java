@@ -40,6 +40,6 @@ public interface AdminDao {
 	
 	public boolean approveDebitCard(DebitCard card) throws BmsException;
 	  
-	public boolean deleteRejectedDebitCard(DebitCard card) throws BmsException;
+	public boolean deleteRejectedDebitCard(long cardNo) throws BmsException;
 
 }

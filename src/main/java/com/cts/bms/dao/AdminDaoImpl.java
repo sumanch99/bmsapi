@@ -171,11 +171,11 @@ public class AdminDaoImpl implements AdminDao {
 		}
 	}
 
-	public boolean deleteRejectedDebitCard(DebitCard card) throws BmsException {
+	public boolean deleteRejectedDebitCard(long cardNo) throws BmsException {
 
 		String query = "delete from debit_card where card_no = ?";
 		try {
-			jdbcTemplate.update(query, new Object[] { card.getCardNo() });
+			jdbcTemplate.update(query, new Object[] { cardNo });
 			return true;
 		} catch (DataAccessException e) {
 			throw new BmsException("Deletion failed");

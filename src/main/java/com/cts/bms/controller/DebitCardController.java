@@ -46,12 +46,12 @@ public class DebitCardController {
 		return CustomJsonResponse.generateResponse("DebitCard approval failed", HttpStatus.EXPECTATION_FAILED, card);
 	}
 	 
-	@DeleteMapping("/admin/reject-debit-card")
-	public ResponseEntity<Object> rejectDebitCard(@RequestBody DebitCard card) {
-		if(cardService.rejectDebitCard(card)) {
-			return CustomJsonResponse.generateResponse("Rejected Debit Card successfully", HttpStatus.OK, card);
+	@DeleteMapping("/admin/reject-debit-card/{cardNo}")
+	public ResponseEntity<Object> rejectDebitCard(@PathVariable long cardNo) {
+		if(cardService.rejectDebitCard(cardNo)) {
+			return CustomJsonResponse.generateResponse("Rejected Debit Card successfully", HttpStatus.OK, cardNo);
 		}
-		return CustomJsonResponse.generateResponse("DebitCard rejection failed", HttpStatus.EXPECTATION_FAILED, card);
+		return CustomJsonResponse.generateResponse("DebitCard rejection failed", HttpStatus.EXPECTATION_FAILED, cardNo);
 	}    
 	
 	@GetMapping("/admin/view-all-pending-debit-cards")
