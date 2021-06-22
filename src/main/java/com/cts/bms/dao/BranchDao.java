@@ -11,4 +11,6 @@ public interface BranchDao {
 	public boolean deductFromBranch(String ifscCode, double amount) throws BmsException;
 	
 	public List<Branch> getAllBranches();
+	
+	public Branch getBranch(String ifscCode);
 }

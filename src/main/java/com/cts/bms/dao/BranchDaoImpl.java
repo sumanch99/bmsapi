@@ -44,5 +44,15 @@ public class BranchDaoImpl implements BranchDao {
 		List<Branch> branches = jdbcTemplate.query(query, new BranchMapper());
 		return branches;
 	}
+	
+	public Branch getBranch(String ifscCode) {
+		String query = "select * from branch where ifsc_code = '"+ifscCode+"'";
+		try {
+			Branch branch = jdbcTemplate.queryForObject(query, new BranchMapper());
+			return branch;
+		}catch(DataAccessException e) {
+			return null;
+		}
+	}
 
 }

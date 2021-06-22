@@ -91,9 +91,9 @@ public class AdminController {
 		return CustomJsonResponse.generateResponse("Account enable unsuccessfull", HttpStatus.EXPECTATION_FAILED, account);
 	}
 	 
-	@PatchMapping("/grant-loan/{ifscCode}") 
-	public ResponseEntity<Object> grantLoan(@RequestBody Loan loan,@PathVariable String ifscCode) {
-		if(loanService.grantLoan(loan, ifscCode)) {
+	@PatchMapping("/grant-loan") 
+	public ResponseEntity<Object> grantLoan(@RequestBody Loan loan) {
+		if(loanService.grantLoan(loan)) {
 			return CustomJsonResponse.generateResponse("Loan successfully granted", HttpStatus.OK, loan);
 		}
 		return CustomJsonResponse.generateResponse("Loan cannot be granted", HttpStatus.EXPECTATION_FAILED, loan);

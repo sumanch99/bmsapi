@@ -11,6 +11,7 @@ import com.cts.bms.dao.BranchDao;
 import com.cts.bms.dao.CustomerDao;
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
+import com.cts.bms.model.Branch;
 import com.cts.bms.model.Loan;
 
 
@@ -42,24 +43,29 @@ public class LoanService {
 		
 	}
 	
-	public boolean grantLoan(Loan loan,String ifscCode) {
+	public boolean grantLoan(Loan loan) {
 		try {
-			if(branchDao.deductFromBranch(ifscCode,loan.getAmount())) {
-				if(adminDao.approveLoanRequest(loan.getLoan_id(), true)) {
-					//get account with account number
-					Account account = accountDao.getAccountWithAccountNumber(loan.getAccNo());
-					if(account==null) {
-						branchDao.depositIntoBranch(ifscCode, loan.getAmount());
-					}
-					else {
-						//logic for deposit to customer account
-						
+			
+			Account account = accountDao.getAccountWithAccountNumber(loan.getAccNo());
+			if(account==null) {
+				return false;
+			}
+			else {
+				Branch branch = branchDao.getBranch(account.getIfscCode());
+				if(branch == null) {
+					return false;
+				}
+				if(branch.getBranchFund()<loan.getAmount()) {
+					return false;
+				}
+				if(branchDao.deductFromBranch(account.getIfscCode(),loan.getAmount())) {
+					if(adminDao.approveLoanRequest(loan.getLoan_id(), true)) {
 						accountDao.depositIntoAccount(account, loan.getAmount());
-						
+						return true;
 					}
-					return true;
 				}
 			}
+			
 		} catch (BmsException e) {
 			return false;
 		}
