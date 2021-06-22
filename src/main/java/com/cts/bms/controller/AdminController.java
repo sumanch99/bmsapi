@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -94,7 +95,7 @@ public class AdminController {
 		return CustomJsonResponse.generateResponse("Loan cannot be granted", HttpStatus.EXPECTATION_FAILED, loan);
 	}
 	
-	@PatchMapping("/reject-loan/{ifscCode}") 
+	@DeleteMapping("/reject-loan/{ifscCode}") 
 	public ResponseEntity<Object> rejectLoan(@RequestBody Loan loan,@PathVariable(required = false) String ifscCode) {
 		if(service.deleteLoanRequest(loan.getLoan_id())) {
 			return CustomJsonResponse.generateResponse("Loan successfully rejected", HttpStatus.OK, loan);
