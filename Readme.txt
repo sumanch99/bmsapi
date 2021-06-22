@@ -1,5 +1,8 @@
 To Do - 
 
 1. atm corner
-2. FD
-3. RD
+2. admin setup
+3. FD
+4. RD
+5. login
+6. logout
