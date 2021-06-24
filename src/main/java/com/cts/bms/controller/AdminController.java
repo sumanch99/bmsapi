@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.bms.exception.IntroducerNotFoundException;
 import com.cts.bms.model.Account;
+import com.cts.bms.model.Admin;
 import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
 import com.cts.bms.model.Loan;
@@ -43,6 +44,15 @@ public class AdminController {
 	
 	@Autowired
 	AccountService accountService;
+	
+	
+	@PostMapping("/create-new-admin")
+	public ResponseEntity<Object> createAdmin(@RequestBody Admin admin) {
+		if(service.createNewAdmin(admin)) {
+			return CustomJsonResponse.generateResponse("Admin successfully signed up", HttpStatus.OK,admin);
+		}
+		return CustomJsonResponse.generateResponse("No Employee found", HttpStatus.NOT_FOUND,admin);
+	}
 	
 	@GetMapping("/customer-list") 
 	public ResponseEntity<Object> getAllCustomers() {

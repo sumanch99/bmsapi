@@ -10,10 +10,12 @@ import com.cts.bms.dao.CustomerDao;
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.exception.IntroducerNotFoundException;
 import com.cts.bms.model.Account;
+import com.cts.bms.model.Admin;
 import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
 import com.cts.bms.model.InterestRate;
 import com.cts.bms.model.Loan;
+import com.cts.bms.model.Employee;
 
 @Service
 public class AdminService {
@@ -23,6 +25,19 @@ public class AdminService {
 	
 	@Autowired
 	CustomerDao customerDao;
+	
+	public boolean createNewAdmin(Admin admin) {
+		try {
+		Employee emp = dao.getEmployee(admin.getEmpId(),admin.getAdhaarNo(), admin.getPhoneNo());
+		if(emp!=null) {
+			dao.addAdmin(admin);
+			return true;
+		}
+		}catch(BmsException e) {
+			return false;
+		}
+		return false;
+	}
 	
 	public List<Customer> getAllCustomers() {
 		return dao.viewAllCustomer();

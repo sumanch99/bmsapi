@@ -4,9 +4,11 @@ import java.util.List;
 
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
+import com.cts.bms.model.Admin;
 import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
 import com.cts.bms.model.DebitCard;
+import com.cts.bms.model.Employee;
 import com.cts.bms.model.InterestRate;
 import com.cts.bms.model.Loan;
 
@@ -41,5 +43,9 @@ public interface AdminDao {
 	public boolean approveDebitCard(DebitCard card) throws BmsException;
 	  
 	public boolean deleteRejectedDebitCard(long cardNo) throws BmsException;
+
+	public Admin addAdmin(Admin admin) throws BmsException;
+	
+	public Employee getEmployee(long empId,long adhaarNo,long phoneNo) throws BmsException; 
 
 }

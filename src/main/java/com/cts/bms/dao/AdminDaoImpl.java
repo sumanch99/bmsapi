@@ -10,13 +10,16 @@ import org.springframework.stereotype.Repository;
 import com.cts.bms.dto.AccountMapper;
 import com.cts.bms.dto.CustomerMapper;
 import com.cts.bms.dto.DebitCardMapper;
+import com.cts.bms.dto.EmployeeMapper;
 import com.cts.bms.dto.InterestRateMapper;
 import com.cts.bms.dto.LoanMapper;
 import com.cts.bms.exception.BmsException;
 import com.cts.bms.model.Account;
+import com.cts.bms.model.Admin;
 import com.cts.bms.model.Branch;
 import com.cts.bms.model.Customer;
 import com.cts.bms.model.DebitCard;
+import com.cts.bms.model.Employee;
 import com.cts.bms.model.InterestRate;
 import com.cts.bms.model.Loan;
 
@@ -25,7 +28,41 @@ public class AdminDaoImpl implements AdminDao {
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
-
+	
+	@Override
+	public Admin addAdmin(Admin admin) throws BmsException{
+		
+		String query = "insert into admin (emp_id,password,adhaar_no,phone_number)"
+				+ " values(?,?,?,?)";
+		try {
+			jdbcTemplate.update(query, new Object[] { 
+					admin.getEmpId(),
+					admin.getPassword(),
+					admin.getAdhaarNo(),
+					admin.getPhoneNo()
+			});
+			return admin;
+		} catch (DataAccessException e) {
+			throw new BmsException("Insertion not possible");
+		}
+	}
+	
+	@Override
+	@SuppressWarnings("deprecation")
+	public Employee getEmployee(long empId,long adhaarNo,long phoneNo) throws BmsException {
+		String query = "select * from employee where emp_id=? and adhaar_no = ? and phone_number=?";
+		try {
+			Employee emp = jdbcTemplate.queryForObject(query, new Object[] { 
+					empId,
+					adhaarNo,
+					phoneNo
+			},new EmployeeMapper());
+			return emp;
+		} catch (DataAccessException e) {
+			throw new BmsException("Selection not possible");
+		}
+	}
+	
 	@Override
 	public List<Customer> viewAllCustomer() {
 		String sqlQuery = "select * from customer where approved=1 order by fname,lname";
