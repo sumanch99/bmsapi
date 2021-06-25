@@ -1,6 +1,5 @@
 package com.cts.bms.bmsapi.controller;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 

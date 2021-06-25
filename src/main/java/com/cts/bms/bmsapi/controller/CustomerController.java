@@ -1,11 +1,8 @@
 package com.cts.bms.bmsapi.controller;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -34,16 +31,8 @@ public class CustomerController {
 	 * 
 	 * handling post request with route "/signup"
 	 */
-	@PostMapping("/signup")
-	public ResponseEntity<Object> createCustomerAccount(@Valid @RequestBody Customer customer, BindingResult result){
-		if(result.hasErrors()) {
-			/*
-			 * checking whether all fields are not null in customer object.
-			 * 
-			 * Returning custom JSON response with message, status code and errors
-			 */
-			return CustomJsonResponse.generateResponse("Improper input", HttpStatus.BAD_REQUEST, result.getAllErrors());
-		}
+	@PostMapping("/customer-signup")
+	public ResponseEntity<Object> createCustomerAccount(@RequestBody Customer customer){
 		try{
 			/*
 			 * calling service logic to insert customer data in DB.

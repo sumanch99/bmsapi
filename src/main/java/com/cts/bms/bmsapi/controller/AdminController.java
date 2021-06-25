@@ -5,13 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,10 +23,6 @@ import com.cts.bms.bmsapi.model.Customer;
 import com.cts.bms.bmsapi.model.Loan;
 import com.cts.bms.bmsapi.model.Transaction;
 import com.cts.bms.bmsapi.response.CustomJsonResponse;
-import com.cts.bms.bmsapi.security.AuthenticationRequest;
-import com.cts.bms.bmsapi.security.AuthenticationResponse;
-import com.cts.bms.bmsapi.security.BmsUserDetailsService;
-import com.cts.bms.bmsapi.security.JwtUtil;
 import com.cts.bms.bmsapi.service.AccountService;
 import com.cts.bms.bmsapi.service.AdminService;
 import com.cts.bms.bmsapi.service.LoanService;
@@ -46,14 +35,6 @@ import com.cts.bms.bmsapi.service.TransactionService;
 @RequestMapping("/admin")
 public class AdminController {
 	
-	@Autowired
-	private AuthenticationManager authenticationManager;
-	
-	@Autowired
-	private BmsUserDetailsService userDetailsService;
-	
-	@Autowired
-	JwtUtil jwtUtil;
 	
 	@Autowired
 	AdminService service;
@@ -67,20 +48,6 @@ public class AdminController {
 	@Autowired
 	AccountService accountService;
 	
-	
-	@PostMapping("/authenticate")
-	public ResponseEntity<Object> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
-		try {
-		authenticationManager.authenticate(
-				new UsernamePasswordAuthenticationToken(authenticationRequest.getEmpId(), authenticationRequest.getPassword())
-		);
-		}catch(BadCredentialsException e) {
-			throw new Exception("Incorrect username or password",e);
-		}
-		final UserDetails userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getEmpId());
-		final String jwt = jwtUtil.generateToken(userDetails);
-		return ResponseEntity.ok(new AuthenticationResponse(jwt));
-	}
 	
 	@PostMapping("/create-new-admin")
 	public ResponseEntity<Object> createAdmin(@RequestBody Admin admin) {

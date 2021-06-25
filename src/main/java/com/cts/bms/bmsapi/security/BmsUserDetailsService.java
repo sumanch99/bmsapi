@@ -1,9 +1,6 @@
 package com.cts.bms.bmsapi.security;
 
-import java.util.ArrayList;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -31,7 +28,6 @@ public class BmsUserDetailsService implements UserDetailsService {
 	    }
 		
 		try {
-			
 			Admin admin = adminDao.loadAdmin(username);
 			if(admin!=null) {
 				return new SecurityUser(Long.toString(admin.getEmpId()), admin.getPassword(),"ADMIN");
