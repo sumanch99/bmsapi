@@ -9,9 +9,11 @@ import com.cts.bms.bmsapi.model.DebitCard;
 import com.cts.bms.bmsapi.model.FixedDeposit;
 import com.cts.bms.bmsapi.model.Loan;
 
-
-
 public interface CustomerDao {
+	public double getFdInterestRate();
+
+	public List<FixedDeposit> getAllFixedDeposits(Account account) throws BmsException;
+
 	public Customer addCustomer(Customer customer) throws BmsException;
 
 	public Loan applyForLoan(Loan loan) throws BmsException;
@@ -26,7 +28,7 @@ public interface CustomerDao {
 
 	public List<DebitCard> viewAllApprovedDebitCards(Account account) throws BmsException;
 
-	public DebitCard getDebitCard(long cardNo,int cvvNo,int pin);
-	
+	public DebitCard getDebitCard(long cardNo, int cvvNo, int pin);
+
 	public Customer loadCustomer(String username) throws BmsException;
 }

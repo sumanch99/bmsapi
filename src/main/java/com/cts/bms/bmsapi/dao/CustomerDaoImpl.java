@@ -10,7 +10,9 @@ import org.springframework.stereotype.Repository;
 import com.cts.bms.bmsapi.dto.AccountMapper;
 import com.cts.bms.bmsapi.dto.CustomerMapper;
 import com.cts.bms.bmsapi.dto.DebitCardMapper;
+import com.cts.bms.bmsapi.dto.FixedDepositMapper;
 import com.cts.bms.bmsapi.dto.LoanMapper;
+import com.cts.bms.bmsapi.dto.RateValueMapper;
 import com.cts.bms.bmsapi.exception.BmsException;
 import com.cts.bms.bmsapi.model.Account;
 import com.cts.bms.bmsapi.model.Customer;
@@ -70,21 +72,44 @@ public class CustomerDaoImpl implements CustomerDao {
 			throw new BmsException("Insertion not possible");
 		}
 	}
-
+	
+	@Override
+	public double getFdInterestRate() {
+		String query = "select * from interest_rate where plan = ?";
+		double rate = jdbcTemplate.queryForObject(query, new RateValueMapper(), new Object[] {
+			"FD"	
+		});
+		return rate;
+	}
+	
 	@Override
 	public boolean applyForFd(FixedDeposit fixedDeposit) throws BmsException {
-		String query = "insert into fixed_deposit (amount,tenure,account_no,interest,start_date,is_matured,matured_amount) values(?,?,?,?,?,?)";
+		String query = "insert into fixed_deposit (account_no,amount,tenure,interest,matured_amount) values(?,?,?,?,?)";
 		try {
 			jdbcTemplate.update(query,
-					new Object[] { fixedDeposit.getAmount(), fixedDeposit.getTenure(), fixedDeposit.getAccount_number(),
-							fixedDeposit.getInterest(), fixedDeposit.getStart_date(), fixedDeposit.getIsMatured(),
+					new Object[] { 
+							fixedDeposit.getAccount_number(),
+							fixedDeposit.getAmount(),
+							fixedDeposit.getTenure(),
+							fixedDeposit.getInterest(),
 							fixedDeposit.getMatured_amount()
-
 					});
 			return true;
 		} catch (DataAccessException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
 			throw new BmsException("Fixed Deposit not possible");
+		}
+	}
+	
+	@Override
+	public List<FixedDeposit> getAllFixedDeposits(Account account) throws BmsException {
+		String query = "select * from fixed_deposit where account_no = ?";
+		try {
+			return jdbcTemplate.query(query,new FixedDepositMapper(),new Object[] {
+				account.getAccNo()
+			});
+		}catch(DataAccessException e) {
+			throw new BmsException("Fixed Deposit selection not possible");
 		}
 	}
 
