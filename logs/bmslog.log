@@ -1,0 +1,879 @@
+[INFO ] 2021-06-177 11:29:08 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+ [INFO ] 2021-06-177 11:29:08 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 3824 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 11:29:08 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 11:29:08 [restartedMain] org.springframework.boot.logging.DeferredLog - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ [INFO ] 2021-06-177 11:29:08 [restartedMain] org.springframework.boot.logging.DeferredLog - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6946 ms
+ [INFO ] 2021-06-177 11:29:15 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ [INFO ] 2021-06-177 11:29:17 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ [INFO ] 2021-06-177 11:29:18 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b5f8127, org.springframework.security.web.context.SecurityContextPersistenceFilter@554600bb, org.springframework.security.web.header.HeaderWriterFilter@a24185d, org.springframework.security.web.authentication.logout.LogoutFilter@587318c1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@473e071a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6d6e5e42, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d15275, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e3c172e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67f1973c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a760896, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6feab00, org.springframework.security.web.session.SessionManagementFilter@723489d7, org.springframework.security.web.access.ExceptionTranslationFilter@473feedc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69fc330d]
+ [INFO ] 2021-06-177 11:29:20 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 11:29:20 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:29:20 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 11:29:20 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 13.634 seconds (JVM running for 16.23)
+ [INFO ] 2021-06-177 11:29:50 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ [INFO ] 2021-06-177 11:29:50 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ [INFO ] 2021-06-177 11:29:56 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 3824 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 11:29:56 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 11:29:57 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 11:29:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:29:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 11:29:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 11:29:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 11:29:57 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1611 ms
+ [INFO ] 2021-06-177 11:29:58 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dff21d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6eb7e4a7, org.springframework.security.web.header.HeaderWriterFilter@5b6dcf70, org.springframework.security.web.authentication.logout.LogoutFilter@786c9953, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1212e1b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@411a1ecf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@226051fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3f88e078, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14ef9641, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@214cdde3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@729d620d, org.springframework.security.web.session.SessionManagementFilter@2ab951f4, org.springframework.security.web.access.ExceptionTranslationFilter@3709a57d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10b812a1]
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.73 seconds (JVM running for 55.623)
+ [INFO ] 2021-06-177 11:29:59 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.AdminService - GET ALL CUSTOMERS
+ [INFO ] 2021-06-177 11:30:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 11:30:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 11:30:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 11:31:46 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:31:46 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:31:46 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 11:31:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 11:31:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 11:31:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 11:31:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 11:31:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 11:32:00 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 11:35:13 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+ [INFO ] 2021-06-177 11:35:13 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 11:35:13 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 11:35:13 [restartedMain] org.springframework.boot.logging.DeferredLog - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ [INFO ] 2021-06-177 11:35:13 [restartedMain] org.springframework.boot.logging.DeferredLog - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ [INFO ] 2021-06-177 11:35:18 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 11:35:19 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:35:19 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 11:35:19 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 11:35:19 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 11:35:19 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5691 ms
+ [INFO ] 2021-06-177 11:35:20 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ [INFO ] 2021-06-177 11:35:21 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ [INFO ] 2021-06-177 11:35:22 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1794564a, org.springframework.security.web.context.SecurityContextPersistenceFilter@300fbe9a, org.springframework.security.web.header.HeaderWriterFilter@5a1a7bb4, org.springframework.security.web.authentication.logout.LogoutFilter@5a44d243, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a9588df, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@47fdc9ad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7fdcaa98, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49a5c18b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@85ca30a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e443e08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ac368ce, org.springframework.security.web.session.SessionManagementFilter@7f447eb3, org.springframework.security.web.access.ExceptionTranslationFilter@7b30e68c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47d20174]
+ [INFO ] 2021-06-177 11:35:23 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 11:35:23 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:35:23 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 11:35:23 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 11.306 seconds (JVM running for 13.809)
+ [INFO ] 2021-06-177 11:35:27 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 11:35:27 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 11:35:27 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 3 ms
+ [WARN ] 2021-06-177 11:35:28 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [276] milliseconds.
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:35:38 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 11:35:39 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [ERROR] 2021-06-177 11:35:39 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - No Account available
+ [ERROR] 2021-06-177 11:35:39 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - Introducer not found
+ [INFO ] 2021-06-177 11:39:43 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:39:43 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:39:43 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 11:39:43 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [ERROR] 2021-06-177 11:39:43 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.AdminService - No Account available
+ [ERROR] 2021-06-177 11:39:43 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - Introducer not found
+ [INFO ] 2021-06-177 11:40:28 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:40:28 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:40:28 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 11:40:28 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [ERROR] 2021-06-177 11:40:28 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.AdminService - No Account available
+ [ERROR] 2021-06-177 11:40:28 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.AdminController - Introducer not found
+ [INFO ] 2021-06-177 11:40:46 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:40:46 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:40:46 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 11:40:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 11:40:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 11:40:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 11:40:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 11:40:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 11:45:38 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 11:45:38 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 11:45:38 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 11:45:38 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 11:45:38 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 11:45:38 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 11:45:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - PreparedStatementCallback; SQL [insert into account (adhaar_no,account_type,active,ifsc_code,phonenumber,introducerAccountNo,nomineeAdhaarNo) values(?,?,?,?,?,?,?)]; Duplicate entry '196938224565' for key 'adhaar_no'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '196938224565' for key 'adhaar_no'
+ [ERROR] 2021-06-177 11:45:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.AdminService - Insertion not possible
+ [ERROR] 2021-06-177 11:45:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - Introducer not found
+ [INFO ] 2021-06-177 11:46:48 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ [INFO ] 2021-06-177 11:46:50 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ [INFO ] 2021-06-177 11:46:50 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 11:46:50 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1217 ms
+ [INFO ] 2021-06-177 11:46:51 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+ [INFO ] 2021-06-177 11:46:52 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+ [INFO ] 2021-06-177 11:46:53 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3693e2bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@21bbb5ee, org.springframework.security.web.header.HeaderWriterFilter@6abae7dc, org.springframework.security.web.authentication.logout.LogoutFilter@7fbbb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@609ed8b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67f288ee, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@330c8e77, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a79e91d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3565c368, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8dc461f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@681a9345, org.springframework.security.web.session.SessionManagementFilter@5eb62ee4, org.springframework.security.web.access.ExceptionTranslationFilter@434af009, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10b96e95]
+ [INFO ] 2021-06-177 11:46:53 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 11:46:53 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:46:53 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 11:46:53 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.205 seconds (JVM running for 703.844)
+ [INFO ] 2021-06-177 11:46:53 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 11:47:05 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ [INFO ] 2021-06-177 11:47:07 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+ [INFO ] 2021-06-177 11:47:07 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 11:47:07 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 935 ms
+ [INFO ] 2021-06-177 11:47:08 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+ [INFO ] 2021-06-177 11:47:09 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+ [INFO ] 2021-06-177 11:47:09 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76acb3f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e4c7729, org.springframework.security.web.header.HeaderWriterFilter@28ed092c, org.springframework.security.web.authentication.logout.LogoutFilter@73442535, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b64cec4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22d87f31, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@751a52b3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4910e2a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58f09904, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18945f5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@393b9d14, org.springframework.security.web.session.SessionManagementFilter@629b0db9, org.springframework.security.web.access.ExceptionTranslationFilter@2682111d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f8c6c28]
+ [INFO ] 2021-06-177 11:47:10 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 11:47:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 11:47:10 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 11:47:10 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.524 seconds (JVM running for 720.707)
+ [INFO ] 2021-06-177 11:47:10 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 12:52:55 [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+ [INFO ] 2021-06-177 12:52:55 [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+ [INFO ] 2021-06-177 12:52:55 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 12:52:55 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1642 ms
+ [INFO ] 2021-06-177 12:52:57 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+ [INFO ] 2021-06-177 12:52:58 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+ [INFO ] 2021-06-177 12:52:58 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c4b3652, org.springframework.security.web.context.SecurityContextPersistenceFilter@773c8a9e, org.springframework.security.web.header.HeaderWriterFilter@67b894bb, org.springframework.security.web.authentication.logout.LogoutFilter@23905063, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12a6cb92, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@61917fe1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9053670, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49945d87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aeba9ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3955fb04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40e337cd, org.springframework.security.web.session.SessionManagementFilter@48e20fc0, org.springframework.security.web.access.ExceptionTranslationFilter@490487d0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58522fa2]
+ [INFO ] 2021-06-177 12:52:58 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 12:52:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:52:59 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 12:52:59 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.432 seconds (JVM running for 4669.519)
+ [INFO ] 2021-06-177 12:52:59 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 12:57:34 [Thread-18] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+ [INFO ] 2021-06-177 12:57:34 [Thread-18] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+ [INFO ] 2021-06-177 12:57:34 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 12:57:34 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 882 ms
+ [INFO ] 2021-06-177 12:57:35 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@101298b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@249e3f9e, org.springframework.security.web.header.HeaderWriterFilter@67b31d78, org.springframework.security.web.authentication.logout.LogoutFilter@3b8a0589, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2961cb37, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20c44b6d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@181baeef, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@365db71f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6705364d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1822af08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34bfef20, org.springframework.security.web.session.SessionManagementFilter@1b946948, org.springframework.security.web.access.ExceptionTranslationFilter@64b4ed85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fd86a16]
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.32 seconds (JVM running for 4947.186)
+ [INFO ] 2021-06-177 12:57:36 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 12:57:48 [Thread-23] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+ [INFO ] 2021-06-177 12:57:48 [Thread-23] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+ [INFO ] 2021-06-177 12:57:48 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 12:57:48 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+ [INFO ] 2021-06-177 12:57:49 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2686d4e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c99de19, org.springframework.security.web.header.HeaderWriterFilter@6f0442fa, org.springframework.security.web.authentication.logout.LogoutFilter@23b35826, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b047d91, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@524c00a1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7c1b56f3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49871ab5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c07fc05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@215960ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2aa34890, org.springframework.security.web.session.SessionManagementFilter@5eb5ba75, org.springframework.security.web.access.ExceptionTranslationFilter@1e13c1be, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4252879f]
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.04 seconds (JVM running for 4961.189)
+ [INFO ] 2021-06-177 12:57:50 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 12:59:57 [Thread-28] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+ [INFO ] 2021-06-177 12:59:57 [Thread-28] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+ [INFO ] 2021-06-177 12:59:57 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 12:59:57 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 12:59:58 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 12:59:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 12:59:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 12:59:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 12:59:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 12:59:58 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1183 ms
+ [INFO ] 2021-06-177 12:59:59 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+ [INFO ] 2021-06-177 12:59:59 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+ [INFO ] 2021-06-177 13:00:00 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2824e7b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3817a9f9, org.springframework.security.web.header.HeaderWriterFilter@9b0f7d, org.springframework.security.web.authentication.logout.LogoutFilter@37df3d80, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25ace186, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@66347f83, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@562d2bca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7bfbf422, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eeb5129, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d3476e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ca2c121, org.springframework.security.web.session.SessionManagementFilter@7b7975d2, org.springframework.security.web.access.ExceptionTranslationFilter@1a259df7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@313d7d0b]
+ [INFO ] 2021-06-177 13:00:00 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:00:00 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:00:00 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:00:00 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.719 seconds (JVM running for 5090.685)
+ [INFO ] 2021-06-177 13:00:00 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:03:55 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:03:55 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:03:55 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.LoanController - START
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.LoanService - START
+ [INFO ] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [ERROR] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.LoanService - No Account available
+ [ERROR] 2021-06-177 13:04:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.LoanController - Applying for loan not possible
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.LoanController - START
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - START
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - END
+ [INFO ] 2021-06-177 13:04:42 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.LoanController - END
+ [INFO ] 2021-06-177 13:06:52 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:06:52 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.LoanService - START
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.BranchDaoImpl - START
+ [ERROR] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.BranchDaoImpl - Incorrect result size: expected 1, actual 0
+ [WARN ] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.LoanService - BAD REQUEST
+ [ERROR] 2021-06-177 13:06:53 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - Loan cannot be granted
+ [INFO ] 2021-06-177 13:08:06 [Thread-33] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:08:06 [Thread-33] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+ [INFO ] 2021-06-177 13:08:07 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:08:07 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1437 ms
+ [INFO ] 2021-06-177 13:08:08 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@437d2c24, org.springframework.security.web.context.SecurityContextPersistenceFilter@59c125b1, org.springframework.security.web.header.HeaderWriterFilter@1c8580fb, org.springframework.security.web.authentication.logout.LogoutFilter@679f31af, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73eae8eb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@56b38337, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@697b55ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20a5672d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bf1501b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bc387c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41c5334d, org.springframework.security.web.session.SessionManagementFilter@782eba6b, org.springframework.security.web.access.ExceptionTranslationFilter@1a650cee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b3c7551]
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.93 seconds (JVM running for 5580.328)
+ [INFO ] 2021-06-177 13:08:09 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:08:15 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:08:15 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:08:15 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 13:08:15 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:08:15 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - START
+ [INFO ] 2021-06-177 13:08:15 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.BranchDaoImpl - START
+ [ERROR] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.BranchDaoImpl - Incorrect result size: expected 1, actual 0
+ [WARN ] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - BAD REQUEST
+ [ERROR] 2021-06-177 13:08:16 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - Loan cannot be granted
+ [INFO ] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - PreparedStatementCallback; SQL [insert into branch (ifsc_code,branch_name,address,pincode,branch_fund) values(?,?,?,?,?)]; Duplicate entry 'IFSC123' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'IFSC123' for key 'PRIMARY'
+ [ERROR] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - Insertion not possible
+ [ERROR] 2021-06-177 13:10:33 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - Branch creation Failed
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.LoanController - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.LoanService - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.LoanService - END
+ [INFO ] 2021-06-177 13:10:42 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.LoanController - END
+ [INFO ] 2021-06-177 13:11:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:11:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.LoanService - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.BranchDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.BranchDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.BranchDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.BranchDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.LoanService - END
+ [INFO ] 2021-06-177 13:11:36 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:13:47 [Thread-38] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:13:47 [Thread-38] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 782 ms
+ [INFO ] 2021-06-177 13:13:48 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5be12741, org.springframework.security.web.context.SecurityContextPersistenceFilter@5aeef26f, org.springframework.security.web.header.HeaderWriterFilter@6cca0d3f, org.springframework.security.web.authentication.logout.LogoutFilter@69e1710f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@789f504e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d6d7477, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b4c6ff2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16ee3f79, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c30aaa5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@afebe9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bb40609, org.springframework.security.web.session.SessionManagementFilter@e7e683b, org.springframework.security.web.access.ExceptionTranslationFilter@7a639b6c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70fc1280]
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.901 seconds (JVM running for 5921.247)
+ [INFO ] 2021-06-177 13:13:50 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:15:20 [Thread-43] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:15:27 [Thread-43] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+ [INFO ] 2021-06-177 13:15:28 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:15:28 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1127 ms
+ [INFO ] 2021-06-177 13:15:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f482c7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1221352d, org.springframework.security.web.header.HeaderWriterFilter@6b737cb2, org.springframework.security.web.authentication.logout.LogoutFilter@90f78c9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5eec0e7f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@949b08a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d33081c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@514021c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d0ec811, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d68bfee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a98e81f, org.springframework.security.web.session.SessionManagementFilter@457a29e0, org.springframework.security.web.access.ExceptionTranslationFilter@2fea0747, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ef53134]
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.702 seconds (JVM running for 6021.041)
+ [INFO ] 2021-06-177 13:15:30 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:15:38 [Thread-48] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:15:39 [Thread-48] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+ [INFO ] 2021-06-177 13:15:40 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:15:40 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1713 ms
+ [INFO ] 2021-06-177 13:15:41 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+ [INFO ] 2021-06-177 13:15:42 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+ [INFO ] 2021-06-177 13:15:42 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52eff2eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@eb9355f, org.springframework.security.web.header.HeaderWriterFilter@2767bd8b, org.springframework.security.web.authentication.logout.LogoutFilter@32993e0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c8504ec, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3f60141, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f498868, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@554a5d0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b6db412, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17cc911, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e463083, org.springframework.security.web.session.SessionManagementFilter@4f49b83f, org.springframework.security.web.access.ExceptionTranslationFilter@6d8f09cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e91f9e3]
+ [INFO ] 2021-06-177 13:15:43 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:15:43 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:15:43 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:15:43 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.225 seconds (JVM running for 6033.652)
+ [INFO ] 2021-06-177 13:15:43 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:17:21 [Thread-53] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:17:30 [Thread-53] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+ [INFO ] 2021-06-177 13:17:30 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:17:30 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 682 ms
+ [INFO ] 2021-06-177 13:17:31 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@359c818d, org.springframework.security.web.context.SecurityContextPersistenceFilter@15dcee16, org.springframework.security.web.header.HeaderWriterFilter@41eada35, org.springframework.security.web.authentication.logout.LogoutFilter@7168434f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7cba70ab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c827a02, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7396ea5b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b7c12c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33b98e50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2495c160, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eef1b97, org.springframework.security.web.session.SessionManagementFilter@34b7080, org.springframework.security.web.access.ExceptionTranslationFilter@6849d14c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d481385]
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.888 seconds (JVM running for 6142.733)
+ [INFO ] 2021-06-177 13:17:32 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:19:15 [Thread-58] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:19:19 [Thread-58] com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+ [INFO ] 2021-06-177 13:19:19 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:19:19 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 680 ms
+ [INFO ] 2021-06-177 13:19:20 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3115b7db, org.springframework.security.web.context.SecurityContextPersistenceFilter@eace52, org.springframework.security.web.header.HeaderWriterFilter@110a83e0, org.springframework.security.web.authentication.logout.LogoutFilter@49f15482, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37b26180, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7a17a2c1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@63bd9f10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6d0d522f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76326fe1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3362f744, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4321da0d, org.springframework.security.web.session.SessionManagementFilter@4bc05f86, org.springframework.security.web.access.ExceptionTranslationFilter@4e971731, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24509d8f]
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.94 seconds (JVM running for 6252.235)
+ [INFO ] 2021-06-177 13:19:21 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:19:54 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:19:54 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:19:54 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:20:13 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:21:15 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:21:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:21:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:21:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 13:22:20 [Thread-63] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:22:20 [Thread-63] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 616 ms
+ [INFO ] 2021-06-177 13:22:21 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@128a61c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bf9e70e, org.springframework.security.web.header.HeaderWriterFilter@30f7dd30, org.springframework.security.web.authentication.logout.LogoutFilter@1c0d9c1e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34937cca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@29bac951, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@36d603a3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@115041fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1873260e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16e3666d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c24434c, org.springframework.security.web.session.SessionManagementFilter@63fb83bb, org.springframework.security.web.access.ExceptionTranslationFilter@7cd3e758, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@322b066b]
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.833 seconds (JVM running for 6433.159)
+ [INFO ] 2021-06-177 13:22:22 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:22:53 [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:22:53 [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:22:53 [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 13:22:53 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:22:53 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:22:53 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:22:54 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:22:54 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:22:54 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.util.DebitRule - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:23:24 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.util.DebitRule - START
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.util.DebitRule - END
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.util.DebitRule - START
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.util.DebitRule - END
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - PreparedStatementCallback; SQL [insert into debit_card(pin, cvv_no, account_no) values(?,?,?)]; Duplicate entry '1' for key 'account_no'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'account_no'
+ [ERROR] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - Insertion falied
+ [ERROR] 2021-06-177 13:23:25 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - DebitCard application not possible
+ [INFO ] 2021-06-177 13:24:32 [Thread-68] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:24:40 [Thread-68] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 535 ms
+ [INFO ] 2021-06-177 13:24:41 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dd1e202, org.springframework.security.web.context.SecurityContextPersistenceFilter@c971a0c, org.springframework.security.web.header.HeaderWriterFilter@2885e0f4, org.springframework.security.web.authentication.logout.LogoutFilter@470ce1a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b6808de, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@350c4d8f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7681690c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2814a476, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52629af5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55e7520d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ce8764b, org.springframework.security.web.session.SessionManagementFilter@30fa1e20, org.springframework.security.web.access.ExceptionTranslationFilter@17b92241, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3501fa45]
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.83 seconds (JVM running for 6573.151)
+ [INFO ] 2021-06-177 13:24:42 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:24:44 [Thread-73] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:24:44 [Thread-73] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+ [INFO ] 2021-06-177 13:24:44 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:24:44 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
+ [INFO ] 2021-06-177 13:24:45 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4caf043f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c4047fa, org.springframework.security.web.header.HeaderWriterFilter@4f7bbdb5, org.springframework.security.web.authentication.logout.LogoutFilter@e1b48ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17c90842, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@45a2fc81, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5da2c120, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d7d1721, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51d89ab8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43dc1323, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1320946e, org.springframework.security.web.session.SessionManagementFilter@3306bfd6, org.springframework.security.web.access.ExceptionTranslationFilter@45c90b89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@305fd268]
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.677 seconds (JVM running for 6576.827)
+ [INFO ] 2021-06-177 13:24:46 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:25:43 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:25:43 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:25:43 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - CARD NOT FOUND
+ [ERROR] 2021-06-177 13:26:14 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - DebitCard approval failed
+ [INFO ] 2021-06-177 13:27:12 [Thread-78] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:27:14 [Thread-78] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+ [INFO ] 2021-06-177 13:27:14 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:27:14 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 597 ms
+ [INFO ] 2021-06-177 13:27:15 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11467be1, org.springframework.security.web.context.SecurityContextPersistenceFilter@ae1a891, org.springframework.security.web.header.HeaderWriterFilter@66266ba8, org.springframework.security.web.authentication.logout.LogoutFilter@750475a3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@364b8261, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7ee0ffb3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4f293a58, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e714f26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e665590, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bc802df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e38f0be, org.springframework.security.web.session.SessionManagementFilter@2d571d48, org.springframework.security.web.access.ExceptionTranslationFilter@4a4fcf82, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@254c8380]
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.788 seconds (JVM running for 6726.918)
+ [INFO ] 2021-06-177 13:27:16 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:27:20 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:27:20 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:27:20 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 13:27:20 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:27:20 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:27:20 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 13:27:21 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 13:27:21 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - CARD NOT FOUND
+ [ERROR] 2021-06-177 13:27:21 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - DebitCard approval failed
+ [INFO ] 2021-06-177 13:28:22 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:28:22 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:28:22 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:28:22 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:28:22 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:28:22 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 13:28:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 13:28:49 [Thread-83] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:28:53 [Thread-83] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+ [INFO ] 2021-06-177 13:28:53 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:28:53 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 582 ms
+ [INFO ] 2021-06-177 13:28:54 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a60862, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ce30efd, org.springframework.security.web.header.HeaderWriterFilter@45fa906, org.springframework.security.web.authentication.logout.LogoutFilter@63280d43, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@794feb6b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43483e20, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5319f6c3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7a3460c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b8bfbff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32657c11, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31a27424, org.springframework.security.web.session.SessionManagementFilter@28db20f5, org.springframework.security.web.access.ExceptionTranslationFilter@60b0e7f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d13e945]
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.792 seconds (JVM running for 6825.761)
+ [INFO ] 2021-06-177 13:28:55 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:31:09 [Thread-88] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:31:13 [Thread-88] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+ [INFO ] 2021-06-177 13:31:13 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:31:13 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 581 ms
+ [INFO ] 2021-06-177 13:31:14 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@713ceb0d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d82329, org.springframework.security.web.header.HeaderWriterFilter@2351883a, org.springframework.security.web.authentication.logout.LogoutFilter@6e074b9f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2230d3f6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@53afeb35, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@30ca39ee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@41cbc278, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b66264e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64d96740, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50e0e6cd, org.springframework.security.web.session.SessionManagementFilter@528ca9bf, org.springframework.security.web.access.ExceptionTranslationFilter@60c5b6da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e93cb39]
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.141 seconds (JVM running for 6966.305)
+ [INFO ] 2021-06-177 13:31:15 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:31:26 [Thread-93] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:31:26 [Thread-93] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
+ [INFO ] 2021-06-177 13:31:26 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:31:26 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 608 ms
+ [INFO ] 2021-06-177 13:31:27 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52ac34d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e0291bd, org.springframework.security.web.header.HeaderWriterFilter@6fbdb3b8, org.springframework.security.web.authentication.logout.LogoutFilter@c2885e9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2642288a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54c6d7c2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@16a3a1b0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e799ada, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16188423, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14bac52b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@728b96b4, org.springframework.security.web.session.SessionManagementFilter@115a3cd2, org.springframework.security.web.access.ExceptionTranslationFilter@2a3454da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4945b129]
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.723 seconds (JVM running for 6978.976)
+ [INFO ] 2021-06-177 13:31:28 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:33:24 [Thread-98] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:33:25 [Thread-98] com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 430 ms
+ [INFO ] 2021-06-177 13:33:26 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Starting...
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Start completed.
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3361a535, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cd512e, org.springframework.security.web.header.HeaderWriterFilter@1e7a0605, org.springframework.security.web.authentication.logout.LogoutFilter@cbdbf6d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e004c53, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7bbd6f65, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1d41351f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7e1c7a7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@452b5309, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b2f3f87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cac380b, org.springframework.security.web.session.SessionManagementFilter@287b1334, org.springframework.security.web.access.ExceptionTranslationFilter@1dfb5b4d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a1d723e]
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.56 seconds (JVM running for 7097.963)
+ [INFO ] 2021-06-177 13:33:27 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:37:27 [Thread-103] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:37:28 [Thread-103] com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Shutdown completed.
+ [INFO ] 2021-06-177 13:37:28 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:37:28 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Starting...
+ [INFO ] 2021-06-177 13:37:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Start completed.
+ [INFO ] 2021-06-177 13:37:30 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@669b3de3, org.springframework.security.web.context.SecurityContextPersistenceFilter@3747cf16, org.springframework.security.web.header.HeaderWriterFilter@25660656, org.springframework.security.web.authentication.logout.LogoutFilter@7dde38e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@729f9a4f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55728566, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b205773, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46b6d647, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e03e706, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bc20226, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64de36fb, org.springframework.security.web.session.SessionManagementFilter@152d7c64, org.springframework.security.web.access.ExceptionTranslationFilter@2495ab0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33599b0f]
+ [INFO ] 2021-06-177 13:37:30 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:37:30 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:37:30 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:37:30 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.676 seconds (JVM running for 7340.588)
+ [INFO ] 2021-06-177 13:37:30 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.AdminService - GET ALL ACCOUNTS
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:37:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:39:08 [Thread-108] com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:39:17 [Thread-108] com.zaxxer.hikari.HikariDataSource - HikariPool-22 - Shutdown completed.
+ [INFO ] 2021-06-177 13:39:17 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:39:17 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 653 ms
+ [INFO ] 2021-06-177 13:39:18 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Starting...
+ [INFO ] 2021-06-177 13:39:19 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Start completed.
+ [INFO ] 2021-06-177 13:39:20 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39722b62, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c4eccce, org.springframework.security.web.header.HeaderWriterFilter@6c8c784d, org.springframework.security.web.authentication.logout.LogoutFilter@6697a21f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62c433f0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@201cab7b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32663a96, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3f8147b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19f8b3ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16b9fec9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2393f0b8, org.springframework.security.web.session.SessionManagementFilter@20f2dc31, org.springframework.security.web.access.ExceptionTranslationFilter@3b89c94d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22268da]
+ [INFO ] 2021-06-177 13:39:20 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:39:20 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:39:20 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:39:20 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.784 seconds (JVM running for 7450.595)
+ [INFO ] 2021-06-177 13:39:20 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:40:31 [Thread-113] com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:40:40 [Thread-113] com.zaxxer.hikari.HikariDataSource - HikariPool-23 - Shutdown completed.
+ [INFO ] 2021-06-177 13:40:40 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:40:40 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:40:40 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:40:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:40:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:40:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:40:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:40:41 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 611 ms
+ [INFO ] 2021-06-177 13:40:41 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Starting...
+ [INFO ] 2021-06-177 13:40:41 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Start completed.
+ [INFO ] 2021-06-177 13:40:41 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@655a2562, org.springframework.security.web.context.SecurityContextPersistenceFilter@31642ee6, org.springframework.security.web.header.HeaderWriterFilter@4d3c2f04, org.springframework.security.web.authentication.logout.LogoutFilter@1a59d695, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@745deee6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e468b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b188ac9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7876a95d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fa8735c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63c031a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40501e6b, org.springframework.security.web.session.SessionManagementFilter@72e2f47c, org.springframework.security.web.access.ExceptionTranslationFilter@163d01ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36f7a69f]
+ [INFO ] 2021-06-177 13:40:42 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:40:42 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:40:42 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:40:42 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.784 seconds (JVM running for 7532.468)
+ [INFO ] 2021-06-177 13:40:42 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:41:07 [Thread-118] com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:41:17 [Thread-118] com.zaxxer.hikari.HikariDataSource - HikariPool-24 - Shutdown completed.
+ [INFO ] 2021-06-177 13:41:17 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:41:17 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 544 ms
+ [INFO ] 2021-06-177 13:41:18 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-25 - Starting...
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-25 - Start completed.
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3449248d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cbce04, org.springframework.security.web.header.HeaderWriterFilter@7d92279d, org.springframework.security.web.authentication.logout.LogoutFilter@c0814bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66154e1e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e5cfe2b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@682e9749, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4ab135c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a0061b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@564207ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29331238, org.springframework.security.web.session.SessionManagementFilter@6d4aad8d, org.springframework.security.web.access.ExceptionTranslationFilter@6aeab3cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ff9d4a0]
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.902 seconds (JVM running for 7569.893)
+ [INFO ] 2021-06-177 13:41:19 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:41:33 [Thread-123] com.zaxxer.hikari.HikariDataSource - HikariPool-25 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:41:33 [Thread-123] com.zaxxer.hikari.HikariDataSource - HikariPool-25 - Shutdown completed.
+ [INFO ] 2021-06-177 13:41:33 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:41:33 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:41:33 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:41:33 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:41:33 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:41:33 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:41:34 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:41:34 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 480 ms
+ [INFO ] 2021-06-177 13:41:34 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-26 - Starting...
+ [INFO ] 2021-06-177 13:41:34 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-26 - Start completed.
+ [INFO ] 2021-06-177 13:41:35 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@776e13d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ab1de54, org.springframework.security.web.header.HeaderWriterFilter@4a4097f0, org.springframework.security.web.authentication.logout.LogoutFilter@61ac65d5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7bf9570f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ebed72b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@388ed9a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3b965380, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@180061dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56318a3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f98fa67, org.springframework.security.web.session.SessionManagementFilter@6ca098f7, org.springframework.security.web.access.ExceptionTranslationFilter@acb151a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fc66357]
+ [INFO ] 2021-06-177 13:41:35 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:41:35 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:41:35 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:41:35 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.62 seconds (JVM running for 7585.505)
+ [INFO ] 2021-06-177 13:41:35 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:42:03 [Thread-128] com.zaxxer.hikari.HikariDataSource - HikariPool-26 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:42:09 [Thread-128] com.zaxxer.hikari.HikariDataSource - HikariPool-26 - Shutdown completed.
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 607 ms
+ [INFO ] 2021-06-177 13:42:10 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-27 - Starting...
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-27 - Start completed.
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ef4d58, org.springframework.security.web.context.SecurityContextPersistenceFilter@2980823a, org.springframework.security.web.header.HeaderWriterFilter@5c8cbfaa, org.springframework.security.web.authentication.logout.LogoutFilter@57760afd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@553636ed, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@12a6c90e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@711c7cdd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@427a72e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27c9e9ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e816311, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dbf02c2, org.springframework.security.web.session.SessionManagementFilter@47f97a5d, org.springframework.security.web.access.ExceptionTranslationFilter@700fd90e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45672703]
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.821 seconds (JVM running for 7622.307)
+ [INFO ] 2021-06-177 13:42:11 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:42:53 [Thread-133] com.zaxxer.hikari.HikariDataSource - HikariPool-27 - Shutdown initiated...
+ [INFO ] 2021-06-177 13:42:57 [Thread-133] com.zaxxer.hikari.HikariDataSource - HikariPool-27 - Shutdown completed.
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 14004 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 391 ms
+ [INFO ] 2021-06-177 13:42:57 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-28 - Starting...
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-28 - Start completed.
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72a11228, org.springframework.security.web.context.SecurityContextPersistenceFilter@c0c63db, org.springframework.security.web.header.HeaderWriterFilter@54f34c01, org.springframework.security.web.authentication.logout.LogoutFilter@bd65ddf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@675658a7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@731c7dfb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75747a72, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c3703ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1140cc0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f9d1962, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39513e2, org.springframework.security.web.session.SessionManagementFilter@4c3c0228, org.springframework.security.web.access.ExceptionTranslationFilter@5828bf3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a95905e]
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 1.454 seconds (JVM running for 7669.001)
+ [INFO ] 2021-06-177 13:42:58 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 13:43:40 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:43:40 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 13:43:40 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [WARN ] 2021-06-177 13:43:40 [http-nio-8080-exec-1] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+ [INFO ] 2021-06-177 13:43:47 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:43:47 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:43:47 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:43:47 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:43:47 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:43:48 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:43:48 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:43:48 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:44:20 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:44:40 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:44:40 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:44:40 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:44:40 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:44:40 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:44:41 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:44:41 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:44:41 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:44:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:44:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.AdminService - GET ALL ACCOUNTS
+ [INFO ] 2021-06-177 13:44:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:44:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:44:47 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:44:54 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:44:54 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:44:54 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:44:55 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:44:55 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:44:55 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:44:55 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:44:55 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:44:57 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:44:57 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:44:57 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:44:58 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:44:58 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:44:58 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:44:58 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:44:58 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.AdminService - START
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.AdminService - END
+ [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ 
