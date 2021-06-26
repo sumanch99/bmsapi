@@ -23,7 +23,7 @@ import com.cts.bms.bmsapi.service.CustomerService;
 /*
  * Rest Controller to map all requests coming with customer prefix.
  */
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {

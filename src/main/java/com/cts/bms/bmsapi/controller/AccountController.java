@@ -25,7 +25,7 @@ import com.cts.bms.bmsapi.service.TransactionService;
 
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 @RequestMapping("/customer")
 public class AccountController {

@@ -19,7 +19,7 @@ import com.cts.bms.bmsapi.model.FixedDeposit;
 import com.cts.bms.bmsapi.response.CustomJsonResponse;
 import com.cts.bms.bmsapi.service.PlanService;
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 @RequestMapping("/customer")
 public class DepositController {

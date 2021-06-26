@@ -22,7 +22,7 @@ import com.cts.bms.bmsapi.service.PlanService;
 
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 @RequestMapping("/admin")
 public class InterestController {

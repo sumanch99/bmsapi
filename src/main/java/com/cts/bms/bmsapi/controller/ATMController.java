@@ -20,7 +20,7 @@ import com.cts.bms.bmsapi.service.ATMService;
 
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 public class ATMController {
 	

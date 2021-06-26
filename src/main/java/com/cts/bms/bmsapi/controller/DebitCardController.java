@@ -25,7 +25,7 @@ import com.cts.bms.bmsapi.service.CardService;
 
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 public class DebitCardController { 
 private static final Logger logger=LogManager.getLogger(DebitCardController.class);

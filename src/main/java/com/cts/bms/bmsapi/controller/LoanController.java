@@ -23,7 +23,7 @@ import com.cts.bms.bmsapi.service.LoanService;
 
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 @RequestMapping("/customer")
 public class LoanController {
