@@ -876,4 +876,1044 @@
  [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
  [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.AdminService - END
  [INFO ] 2021-06-177 13:44:59 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 15:20:16 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+ [INFO ] 2021-06-177 15:20:16 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 12332 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 15:20:17 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 15:20:18 [restartedMain] org.springframework.boot.logging.DeferredLog - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ [INFO ] 2021-06-177 15:20:18 [restartedMain] org.springframework.boot.logging.DeferredLog - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ [INFO ] 2021-06-177 15:20:42 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 15:20:43 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 15:20:43 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 15:20:43 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 15:20:43 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 15:20:43 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 25324 ms
+ [INFO ] 2021-06-177 15:20:44 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ [INFO ] 2021-06-177 15:20:46 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ [INFO ] 2021-06-177 15:20:47 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c81e8ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@27daf52e, org.springframework.security.web.header.HeaderWriterFilter@590a0d8a, org.springframework.security.web.authentication.logout.LogoutFilter@58043d1a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15748e0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@810ac64, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1ea86d4f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c4a01e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@401b58b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@517c6585, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b1d39f2, org.springframework.security.web.session.SessionManagementFilter@184a0bb2, org.springframework.security.web.access.ExceptionTranslationFilter@318bc6ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f3cf396]
+ [INFO ] 2021-06-177 15:20:49 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 15:20:49 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 15:20:49 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 15:20:49 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 37.19 seconds (JVM running for 69.644)
+ [INFO ] 2021-06-177 15:20:53 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 15:20:53 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 15:20:53 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [WARN ] 2021-06-177 15:20:53 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [135] milliseconds.
+ [INFO ] 2021-06-177 15:21:11 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 15:21:11 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 15:21:11 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 15:21:11 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 15:21:11 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 15:21:11 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.ATMController - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 15:21:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.ATMController - END
+ [INFO ] 2021-06-177 16:46:35 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+ [INFO ] 2021-06-177 16:46:35 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 16220 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 16:46:35 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 16:46:35 [restartedMain] org.springframework.boot.logging.DeferredLog - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ [INFO ] 2021-06-177 16:46:35 [restartedMain] org.springframework.boot.logging.DeferredLog - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4461 ms
+ [INFO ] 2021-06-177 16:46:40 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ [INFO ] 2021-06-177 16:46:42 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ [INFO ] 2021-06-177 16:46:43 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65fcc306, org.springframework.security.web.context.SecurityContextPersistenceFilter@33e360c6, org.springframework.security.web.header.HeaderWriterFilter@27b38983, org.springframework.security.web.authentication.logout.LogoutFilter@73ec63f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12d67238, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@590a0d8a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43a2098b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@13f96505, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@501908a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7919ea0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cb588e, org.springframework.security.web.session.SessionManagementFilter@2d11b79e, org.springframework.security.web.access.ExceptionTranslationFilter@24ceb93d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6116f5d1]
+ [INFO ] 2021-06-177 16:46:44 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 16:46:44 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 16:46:44 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 16:46:44 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 9.928 seconds (JVM running for 12.548)
+ [INFO ] 2021-06-177 16:49:11 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 16:49:11 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 16:49:11 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 3 ms
+ [INFO ] 2021-06-177 16:49:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 16:49:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:49:12 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:49:12 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [WARN ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,374] milliseconds.
+ [INFO ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 16:49:14 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 16:50:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 16:50:42 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 16:50:42 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 16:50:43 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 16:50:43 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:50:43 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:50:43 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 16:50:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 16:50:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 16:50:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [ERROR] 2021-06-177 16:50:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AccountDaoImpl - Incorrect result size: expected 1, actual 0
+ [WARN ] 2021-06-177 16:50:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.TransactionService - BAD RETURN
+ [ERROR] 2021-06-177 16:50:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AccountController - Transactions cannot be fetched
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.TransactionService - END
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.TransactionDaoImpl - START
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.TransactionDaoImpl - END
+ [INFO ] 2021-06-177 16:51:10 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AccountController - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.ATMController - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:52:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.ATMController - END
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.ATMController - START
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:53:32 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:53:33 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.ATMController - END
+ [INFO ] 2021-06-177 16:53:51 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 16:53:51 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 16:53:51 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [ERROR] 2021-06-177 16:53:51 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AccountDaoImpl - Incorrect result size: expected 1, actual 0
+ [ERROR] 2021-06-177 16:53:51 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - account not found
+ [WARN ] 2021-06-177 16:53:51 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - BAD REQUEST
+ [INFO ] 2021-06-177 16:53:55 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 16:53:55 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 16:53:55 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:53:56 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:53:56 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:53:56 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:53:56 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 16:53:56 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 16:54:08 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 16:57:07 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ [INFO ] 2021-06-177 16:57:13 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ [INFO ] 2021-06-177 16:57:14 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 16220 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 16:57:14 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1247 ms
+ [INFO ] 2021-06-177 16:57:15 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+ [INFO ] 2021-06-177 16:57:16 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+ [INFO ] 2021-06-177 16:57:16 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e2ee210, org.springframework.security.web.context.SecurityContextPersistenceFilter@41308b3e, org.springframework.security.web.header.HeaderWriterFilter@bddb6dd, org.springframework.security.web.authentication.logout.LogoutFilter@4fa6e631, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e5c5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bb49c6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@db9a498, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ddd3e69, org.springframework.security.web.session.SessionManagementFilter@1f1314fe, org.springframework.security.web.access.ExceptionTranslationFilter@2e2091c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c761baa]
+ [INFO ] 2021-06-177 16:57:17 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 16:57:17 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 16:57:17 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 16:57:17 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.203 seconds (JVM running for 645.032)
+ [INFO ] 2021-06-177 16:57:17 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 16:57:31 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 16:57:31 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 16:57:31 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 16:57:45 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [WARN ] 2021-06-177 16:57:45 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - BAD REQUEST
+ [INFO ] 2021-06-177 16:57:46 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [WARN ] 2021-06-177 16:57:46 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - BAD REQUEST
+ [INFO ] 2021-06-177 16:58:46 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 16:58:46 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 16:58:47 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 16:59:56 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 16:59:56 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 16:59:56 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 16:59:56 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 16:59:56 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:00:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:00:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:00:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:00:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:00:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:00:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:01:03 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:01:03 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:01:03 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:01:03 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:01:03 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:01:03 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:01:30 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:01:30 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:01:30 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:01:30 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:01:33 [http-nio-8080-exec-10] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:01:33 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:01:33 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:01:33 [http-nio-8080-exec-10] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:01:42 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:01:42 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:01:42 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:01:42 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:01:42 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:01:42 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:16 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:17 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:17 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:17 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:17 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:17 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:17 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:24 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:24 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:24 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:24 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:24 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:24 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:25 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:25 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:25 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:25 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:25 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:25 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:26 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:28 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:28 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:28 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:28 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:28 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:28 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:33 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:33 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:33 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:34 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:34 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:34 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:35 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:02:35 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:02:35 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:36 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:36 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:02:36 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:02:55 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:02:55 [http-nio-8080-exec-7] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:02:55 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:02:55 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:02:55 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:03:24 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:03:24 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:03:24 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:03:24 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:03:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:03:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:03:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:03:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:03:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:03:55 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:03:55 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:03:55 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:03:55 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:03:55 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:04:04 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:04:04 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:04:04 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:04:04 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:04:04 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:04:24 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:04:24 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:04:24 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:04:24 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:05:06 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:05:16 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+ [INFO ] 2021-06-177 17:05:16 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 16220 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:05:16 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1106 ms
+ [INFO ] 2021-06-177 17:05:17 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+ [INFO ] 2021-06-177 17:05:18 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+ [INFO ] 2021-06-177 17:05:18 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@613cbfdd, org.springframework.security.web.context.SecurityContextPersistenceFilter@21ce18fd, org.springframework.security.web.header.HeaderWriterFilter@f5d80fd, org.springframework.security.web.authentication.logout.LogoutFilter@1924eed3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fa8688e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5db36f26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e8a4605, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a33a8f1, org.springframework.security.web.session.SessionManagementFilter@67e1fda, org.springframework.security.web.access.ExceptionTranslationFilter@57156280, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ae55a9c]
+ [INFO ] 2021-06-177 17:05:19 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:05:19 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:05:19 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:05:19 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.866 seconds (JVM running for 1127.032)
+ [INFO ] 2021-06-177 17:05:19 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:05:28 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:05:28 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:05:28 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 3 ms
+ [INFO ] 2021-06-177 17:05:28 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:05:28 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:05:28 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:05:29 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:05:29 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:05:41 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:05:41 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:05:41 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:05:41 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:05:59 [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:06:03 [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+ [INFO ] 2021-06-177 17:06:03 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 16220 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:06:03 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 800 ms
+ [INFO ] 2021-06-177 17:06:04 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cfcabb7, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c2e8f62, org.springframework.security.web.header.HeaderWriterFilter@1ecbed3d, org.springframework.security.web.authentication.logout.LogoutFilter@1cf8e09d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2c720088, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16b4c1d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57d7743d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@126b8879, org.springframework.security.web.session.SessionManagementFilter@3d2bc354, org.springframework.security.web.access.ExceptionTranslationFilter@2b91d21, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30c74fea]
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.378 seconds (JVM running for 1173.769)
+ [INFO ] 2021-06-177 17:06:05 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:09 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:06:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:06:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:06:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:11 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:06:15 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.LogoutController - START
+ [INFO ] 2021-06-177 17:06:30 [Thread-18] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:06:39 [Thread-18] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+ [INFO ] 2021-06-177 17:06:39 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 16220 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:06:39 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 660 ms
+ [INFO ] 2021-06-177 17:06:40 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b82bcb, org.springframework.security.web.context.SecurityContextPersistenceFilter@15516e82, org.springframework.security.web.header.HeaderWriterFilter@140d9aa5, org.springframework.security.web.authentication.logout.LogoutFilter@9996e3e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@79dad172, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@145c8de2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cfcf57e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b7efd3e, org.springframework.security.web.session.SessionManagementFilter@5b34023d, org.springframework.security.web.access.ExceptionTranslationFilter@2b254537, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28bd88d6]
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.172 seconds (JVM running for 1209.864)
+ [INFO ] 2021-06-177 17:06:41 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:47 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:06:50 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:06:50 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:06:50 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:50 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:50 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:06:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:06:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:06:52 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:53 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:53 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:06:56 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:06:56 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:56 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:56 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:06:57 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:06:57 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:06:57 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:06:57 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:07:00 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:07:00 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:07:00 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:07:00 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:07:00 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:07:02 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:07:02 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:07:02 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:07:02 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:07:02 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:07:08 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.LogoutController - START
+ [INFO ] 2021-06-177 17:07:08 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.LogoutController - END
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:07:11 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:07:14 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:07:14 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:07:14 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:07:14 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:07:14 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:08:46 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:08:46 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:08:46 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:08:46 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:08:46 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:08:46 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:08:52 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.LogoutController - START
+ [INFO ] 2021-06-177 17:08:52 [http-nio-8080-exec-7] com.cts.bms.bmsapi.controller.LogoutController - END
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:08:59 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:09:34 [Thread-23] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:09:40 [Thread-23] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+ [INFO ] 2021-06-177 17:09:40 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 16220 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:09:40 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 732 ms
+ [INFO ] 2021-06-177 17:09:41 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d263d88, org.springframework.security.web.context.SecurityContextPersistenceFilter@54c020f3, org.springframework.security.web.header.HeaderWriterFilter@3ffe3b09, org.springframework.security.web.authentication.logout.LogoutFilter@2b8f98a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bfecbf7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@301cf02a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6acde435, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69fcb4b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d5e6226, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73b620f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a69e1f2, org.springframework.security.web.session.SessionManagementFilter@6d55d79c, org.springframework.security.web.access.ExceptionTranslationFilter@c0caf72, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62324cc2]
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.094 seconds (JVM running for 1390.435)
+ [INFO ] 2021-06-177 17:09:42 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:09:52 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:10:03 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:10:06 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:10:06 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:10:06 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:10:06 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:10:06 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:10:06 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:11:19 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+ [INFO ] 2021-06-177 17:11:19 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 2140 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:11:19 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:11:19 [restartedMain] org.springframework.boot.logging.DeferredLog - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ [INFO ] 2021-06-177 17:11:19 [restartedMain] org.springframework.boot.logging.DeferredLog - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ [INFO ] 2021-06-177 17:11:23 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:11:23 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:11:23 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:11:23 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:11:24 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:11:24 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4456 ms
+ [INFO ] 2021-06-177 17:11:24 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ [INFO ] 2021-06-177 17:11:25 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ [INFO ] 2021-06-177 17:11:26 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cf93f2f, org.springframework.security.web.context.SecurityContextPersistenceFilter@184a0bb2, org.springframework.security.web.header.HeaderWriterFilter@318bc6ad, org.springframework.security.web.authentication.logout.LogoutFilter@460f9df3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10f49f5c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6307dfff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@772aaee1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4dd83e3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27daf52e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b6fe818, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c81e8ac, org.springframework.security.web.session.SessionManagementFilter@590a0d8a, org.springframework.security.web.access.ExceptionTranslationFilter@61e83b7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11d3718d]
+ [INFO ] 2021-06-177 17:11:27 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:11:27 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:11:27 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:11:27 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 8.964 seconds (JVM running for 11.026)
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:11:39 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:11:40 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:11:40 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:11:40 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:11:40 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:11:40 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:11:40 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:11:57 [http-nio-8080-exec-10] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:11:57 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:11:57 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:11:57 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 17:11:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:11:58 [http-nio-8080-exec-10] com.cts.bms.bmsapi.security.BmsUserDetailsService - Selection not possible
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:12:12 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:12:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:12:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:12:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:12:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:12:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:12:16 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:12:19 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:12:19 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:12:19 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:12:19 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:12:19 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:12:19 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:12:21 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.DebitCardController - START
+ [INFO ] 2021-06-177 17:12:21 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.CardService - START
+ [INFO ] 2021-06-177 17:12:21 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:12:21 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:12:21 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.CardService - END
+ [INFO ] 2021-06-177 17:12:21 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.DebitCardController - END
+ [INFO ] 2021-06-177 17:12:35 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:12:35 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:12:35 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:12:35 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:12:35 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:13:39 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:13:40 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:13:40 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:13:40 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:13:40 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:13:40 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:13:40 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:13:40 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:17:04 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:17:09 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ [INFO ] 2021-06-177 17:17:09 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 2140 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:17:09 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1178 ms
+ [INFO ] 2021-06-177 17:17:10 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+ [INFO ] 2021-06-177 17:17:11 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+ [INFO ] 2021-06-177 17:17:11 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@517b0701, org.springframework.security.web.context.SecurityContextPersistenceFilter@4acc805, org.springframework.security.web.header.HeaderWriterFilter@49036f8a, org.springframework.security.web.authentication.logout.LogoutFilter@147902a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5916bc7e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@38107079, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4039f9e1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6267844f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69d64a85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bfb170a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8653d1a, org.springframework.security.web.session.SessionManagementFilter@622c3894, org.springframework.security.web.access.ExceptionTranslationFilter@153f1500, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63556834]
+ [INFO ] 2021-06-177 17:17:12 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:17:12 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:17:12 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:17:12 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.919 seconds (JVM running for 355.607)
+ [INFO ] 2021-06-177 17:17:12 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:17:17 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:17:39 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:17:47 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+ [INFO ] 2021-06-177 17:17:47 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 2140 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:17:47 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 955 ms
+ [INFO ] 2021-06-177 17:17:48 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@376b69b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@3377c67d, org.springframework.security.web.header.HeaderWriterFilter@16e9b56a, org.springframework.security.web.authentication.logout.LogoutFilter@6a942f64, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@777424da, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4511f58f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@334183f1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5eccca11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2790bfce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c090cb3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@301dfd40, org.springframework.security.web.session.SessionManagementFilter@6d1a876a, org.springframework.security.web.access.ExceptionTranslationFilter@385584d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16047ee]
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.44 seconds (JVM running for 393.176)
+ [INFO ] 2021-06-177 17:17:49 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:19 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:18:21 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:18:21 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:18:21 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:21 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:21 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.LogoutController - START
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.LogoutController - END
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.LogoutController - START
+ [INFO ] 2021-06-177 17:18:27 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.LogoutController - END
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:31 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:18:34 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:18:34 [http-nio-8080-exec-10] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:18:34 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:18:34 [http-nio-8080-exec-10] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:18:34 [http-nio-8080-exec-10] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:20:58 [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:20:58 [Thread-13] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+ [INFO ] 2021-06-177 17:20:59 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 2140 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:20:59 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1587 ms
+ [INFO ] 2021-06-177 17:21:00 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+ [INFO ] 2021-06-177 17:21:01 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+ [INFO ] 2021-06-177 17:21:01 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@303d8d43, org.springframework.security.web.context.SecurityContextPersistenceFilter@25782b3b, org.springframework.security.web.header.HeaderWriterFilter@46cf879d, org.springframework.security.web.authentication.logout.LogoutFilter@7f09de1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@542346ae, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@42ab7d40, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@30b2a780, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50ee2d78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58603bdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6229ac21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ddfec20, org.springframework.security.web.session.SessionManagementFilter@6118374b, org.springframework.security.web.access.ExceptionTranslationFilter@3868b1aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43edd5bb]
+ [INFO ] 2021-06-177 17:21:02 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:21:02 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:21:02 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:21:02 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.219 seconds (JVM running for 585.421)
+ [INFO ] 2021-06-177 17:21:02 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:21:11 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:21:19 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:21:22 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:21:22 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:21:22 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:21:22 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:21:22 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:21:52 [Thread-18] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:21:57 [Thread-18] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+ [INFO ] 2021-06-177 17:21:57 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 2140 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:21:57 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 710 ms
+ [INFO ] 2021-06-177 17:21:58 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30ef30f3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b3c8ac, org.springframework.security.web.header.HeaderWriterFilter@66a32598, org.springframework.security.web.authentication.logout.LogoutFilter@756249cd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d99e7d8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ece8068, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5de540e2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4bd627e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28ed4d89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@571d22e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7413828f, org.springframework.security.web.session.SessionManagementFilter@153d82e0, org.springframework.security.web.access.ExceptionTranslationFilter@2910cc27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@442dae47]
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.084 seconds (JVM running for 643.057)
+ [INFO ] 2021-06-177 17:21:59 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:22:13 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:22:30 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:22:30 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:22:30 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:22:30 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:22:30 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:22:31 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:22:31 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:22:31 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:22:31 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:22:31 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:24:26 [http-nio-8080-exec-2] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:24:26 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:24:26 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:24:26 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:24:27 [http-nio-8080-exec-2] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:24:27 [http-nio-8080-exec-2] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:24:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:24:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:24:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:24:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:24:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:24:35 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:25:18 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:25:18 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:25:33 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 17:25:33 [http-nio-8080-exec-9] com.cts.bms.bmsapi.service.TransactionService - VIEWALLTRANSACTIONS
+ [INFO ] 2021-06-177 17:25:33 [http-nio-8080-exec-9] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:25:35 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:25:35 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:25:35 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:25:35 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:25:35 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:25:36 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 17:25:36 [http-nio-8080-exec-3] com.cts.bms.bmsapi.service.TransactionService - VIEWALLTRANSACTIONS
+ [INFO ] 2021-06-177 17:25:36 [http-nio-8080-exec-3] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:25:39 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - START
+ [INFO ] 2021-06-177 17:25:39 [http-nio-8080-exec-2] com.cts.bms.bmsapi.service.TransactionService - VIEWALLTRANSACTIONS
+ [INFO ] 2021-06-177 17:25:40 [http-nio-8080-exec-2] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:26:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:26:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:26:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:26:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.TransactionService - END
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.TransactionDaoImpl - START
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.TransactionDaoImpl - END
+ [INFO ] 2021-06-177 17:26:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.AccountController - END
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.TransactionService - END
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.TransactionDaoImpl - START
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.TransactionDaoImpl - END
+ [INFO ] 2021-06-177 17:27:10 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.AccountController - END
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.service.TransactionService - END
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.TransactionDaoImpl - START
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.dao.TransactionDaoImpl - END
+ [INFO ] 2021-06-177 17:27:32 [http-nio-8080-exec-5] com.cts.bms.bmsapi.controller.AccountController - END
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.TransactionService - END
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.TransactionDaoImpl - START
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.TransactionDaoImpl - END
+ [INFO ] 2021-06-177 17:27:42 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AccountController - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.ATMController - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 17:28:06 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:28:07 [http-nio-8080-exec-4] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:28:07 [http-nio-8080-exec-4] com.cts.bms.bmsapi.controller.ATMController - END
+ [INFO ] 2021-06-177 17:29:30 [Thread-23] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:29:30 [Thread-23] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+ [INFO ] 2021-06-177 17:29:30 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 2140 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:29:30 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 851 ms
+ [INFO ] 2021-06-177 17:29:31 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e08518b, org.springframework.security.web.context.SecurityContextPersistenceFilter@35409111, org.springframework.security.web.header.HeaderWriterFilter@17289c8a, org.springframework.security.web.authentication.logout.LogoutFilter@4025f971, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b71ac27, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ad9f4ff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ed819ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50693e96, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fd88cdd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c478360, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e2891e3, org.springframework.security.web.session.SessionManagementFilter@5ec629d, org.springframework.security.web.access.ExceptionTranslationFilter@37dfa1ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b89773b]
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.262 seconds (JVM running for 1096.313)
+ [INFO ] 2021-06-177 17:29:32 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.ATMController - START
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ecadb57 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@719bbba9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ceadfff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6442a756 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a44820c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@262e361e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c310003 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [WARN ] 2021-06-177 17:29:40 [http-nio-8080-exec-1] com.zaxxer.hikari.pool.PoolBase - HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5db86ac4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:29:50 [http-nio-8080-exec-1] com.cts.bms.bmsapi.controller.ATMController - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.ATMController - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.ATMService - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.CardService - GET DEBIT CARD
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.service.ATMService - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:30:28 [http-nio-8080-exec-6] com.cts.bms.bmsapi.controller.ATMController - END
+ [INFO ] 2021-06-177 17:32:54 [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+ [INFO ] 2021-06-177 17:32:54 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 1160 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:32:54 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:32:55 [restartedMain] org.springframework.boot.logging.DeferredLog - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ [INFO ] 2021-06-177 17:32:55 [restartedMain] org.springframework.boot.logging.DeferredLog - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ [INFO ] 2021-06-177 17:32:59 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:32:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:32:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:32:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:32:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:32:59 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4580 ms
+ [INFO ] 2021-06-177 17:33:00 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ [INFO ] 2021-06-177 17:33:01 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ [INFO ] 2021-06-177 17:33:02 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c7ccc01, org.springframework.security.web.context.SecurityContextPersistenceFilter@78843638, org.springframework.security.web.header.HeaderWriterFilter@40779f3c, org.springframework.security.web.authentication.logout.LogoutFilter@3e52217f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a659ace, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d45f81c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@696591c2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6615175b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6307dfff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@da6e9a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6de0d0cf, org.springframework.security.web.session.SessionManagementFilter@1eb2ca40, org.springframework.security.web.access.ExceptionTranslationFilter@844d592, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@772aaee1]
+ [INFO ] 2021-06-177 17:33:03 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:33:03 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:33:03 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:33:03 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 9.468 seconds (JVM running for 11.682)
+ [INFO ] 2021-06-177 17:33:15 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:33:15 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:33:15 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [WARN ] 2021-06-177 17:33:16 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [110] milliseconds.
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:34:14 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.CustomerDaoImpl - END
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AccountController - START
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.TransactionService - START
+ [INFO ] 2021-06-177 17:34:14 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - START
+ [INFO ] 2021-06-177 17:34:15 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AccountDaoImpl - END
+ [INFO ] 2021-06-177 17:34:15 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.TransactionService - END
+ [INFO ] 2021-06-177 17:34:15 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.TransactionDaoImpl - START
+ [INFO ] 2021-06-177 17:34:15 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.TransactionDaoImpl - END
+ [INFO ] 2021-06-177 17:34:15 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AccountController - END
+ [INFO ] 2021-06-177 17:52:57 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:52:57 [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+ [INFO ] 2021-06-177 17:52:57 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 1160 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:52:57 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1494 ms
+ [INFO ] 2021-06-177 17:52:59 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+ [INFO ] 2021-06-177 17:53:00 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+ [INFO ] 2021-06-177 17:53:00 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16598a53, org.springframework.security.web.context.SecurityContextPersistenceFilter@464a0b23, org.springframework.security.web.header.HeaderWriterFilter@326367cd, org.springframework.security.web.authentication.logout.LogoutFilter@4949a9c5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66e1e597, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@547b5d76, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c4066c5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4757cd77, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e108cb6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77e4c5b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17765ee7, org.springframework.security.web.session.SessionManagementFilter@476c9a16, org.springframework.security.web.access.ExceptionTranslationFilter@6eeed581, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40ff842]
+ [INFO ] 2021-06-177 17:53:01 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:53:01 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:53:01 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:53:01 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 3.594 seconds (JVM running for 1209.625)
+ [INFO ] 2021-06-177 17:53:01 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:53:31 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:53:31 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:53:31 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 1 ms
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-7] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-7] com.cts.bms.bmsapi.security.BmsUserDetailsService - END
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AdminController - START
+ [WARN ] 2021-06-177 17:53:52 [http-nio-8080-exec-8] com.cts.bms.bmsapi.service.LoanService - GET ALL APPROVED LOANS
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-8] com.cts.bms.bmsapi.dao.AdminDaoImpl - END
+ [INFO ] 2021-06-177 17:53:52 [http-nio-8080-exec-8] com.cts.bms.bmsapi.controller.AdminController - END
+ [INFO ] 2021-06-177 17:57:03 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ [INFO ] 2021-06-177 17:57:03 [Thread-8] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.springframework.boot.StartupInfoLogger - Starting BankManagementSystemApplication using Java 15.0.2 on sch with PID 1160 (E:\bmsproject\api-rough\bmsapi-release\target\classes started by USER in E:\bmsproject\api-rough\bmsapi-release)
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.springframework.boot.SpringApplication - No active profile set, falling back to default profiles: default
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting service [Tomcat]
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting Servlet engine: [Apache Tomcat/9.0.46]
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.apache.juli.logging.DirectJDKLog - Initializing Spring embedded WebApplicationContext
+ [INFO ] 2021-06-177 17:57:04 [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 939 ms
+ [INFO ] 2021-06-177 17:57:05 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+ [INFO ] 2021-06-177 17:57:05 [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+ [INFO ] 2021-06-177 17:57:06 [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15db1706, org.springframework.security.web.context.SecurityContextPersistenceFilter@1831bf69, org.springframework.security.web.header.HeaderWriterFilter@1d21e0ca, org.springframework.security.web.authentication.logout.LogoutFilter@291b0181, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e385abf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6b35e933, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1097823, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40638c12, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@392dc166, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b184139, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@184b60e3, org.springframework.security.web.session.SessionManagementFilter@242c9839, org.springframework.security.web.access.ExceptionTranslationFilter@5dff9859, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bc24332]
+ [INFO ] 2021-06-177 17:57:06 [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ [INFO ] 2021-06-177 17:57:06 [restartedMain] org.apache.juli.logging.DirectJDKLog - Starting ProtocolHandler ["http-nio-8080"]
+ [INFO ] 2021-06-177 17:57:06 [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ [INFO ] 2021-06-177 17:57:06 [restartedMain] org.springframework.boot.StartupInfoLogger - Started BankManagementSystemApplication in 2.601 seconds (JVM running for 1454.726)
+ [INFO ] 2021-06-177 17:57:06 [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ [INFO ] 2021-06-177 17:59:42 [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:59:42 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Initializing Servlet 'dispatcherServlet'
+ [INFO ] 2021-06-177 17:59:42 [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet - Completed initialization in 2 ms
+ [INFO ] 2021-06-177 17:59:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - START
+ [INFO ] 2021-06-177 17:59:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - START
+ [ERROR] 2021-06-177 17:59:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.AdminDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:59:42 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - START
+ [ERROR] 2021-06-177 17:59:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.dao.CustomerDaoImpl - Incorrect result size: expected 1, actual 0
+ [INFO ] 2021-06-177 17:59:43 [http-nio-8080-exec-1] com.cts.bms.bmsapi.security.BmsUserDetailsService - Selection not possible
  

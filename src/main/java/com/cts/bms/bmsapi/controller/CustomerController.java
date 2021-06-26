@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -45,6 +46,8 @@ public class CustomerController {
 			 * This method will throw application specific exception BMSException on
 			 * Unsuccessful DB operation.
 			 */
+			String encodedPassword = new BCryptPasswordEncoder().encode(customer.getPassword());
+			customer.setPassword(encodedPassword);
 			Customer cust = customerService.createNewUser(customer);
 			if(cust==null) {
 				logger.error("UserID already exists");
