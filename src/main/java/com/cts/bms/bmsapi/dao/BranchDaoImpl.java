@@ -13,11 +13,9 @@ import com.cts.bms.bmsapi.dto.BranchMapper;
 import com.cts.bms.bmsapi.exception.BmsException;
 import com.cts.bms.bmsapi.model.Branch;
 
-
-
 @Repository
 public class BranchDaoImpl implements BranchDao {
-	private static final Logger logger=LogManager.getLogger( BranchDaoImpl .class);
+	private static final Logger logger = LogManager.getLogger(BranchDaoImpl.class);
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
@@ -52,21 +50,26 @@ public class BranchDaoImpl implements BranchDao {
 	@Override
 	public List<Branch> getAllBranches() {
 		logger.info("START");
-		String query = "select * from branch order by branch_name";
-		List<Branch> branches = jdbcTemplate.query(query, new BranchMapper());
-		logger.info("END");
-		return branches;
+		try {
+			String query = "select * from branch order by branch_name";
+			List<Branch> branches = jdbcTemplate.query(query, new BranchMapper());
+			logger.info("END");
+			return branches;
+		} catch (DataAccessException e) {
+			logger.error(e.getMessage());
+			return null;
+		}
 	}
-	
+
 	@Override
-	public Branch getBranch(String ifscCode) {  
+	public Branch getBranch(String ifscCode) {
 		logger.info("START");
-		String query = "select * from branch where ifsc_code = '"+ifscCode+"'";
+		String query = "select * from branch where ifsc_code = '" + ifscCode + "'";
 		try {
 			Branch branch = jdbcTemplate.queryForObject(query, new BranchMapper());
 			logger.info("END");
 			return branch;
-		}catch(DataAccessException e) {
+		} catch (DataAccessException e) {
 			logger.error(e.getMessage());
 			return null;
 		}

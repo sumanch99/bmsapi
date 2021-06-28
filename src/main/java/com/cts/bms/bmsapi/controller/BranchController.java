@@ -27,26 +27,26 @@ import com.cts.bms.bmsapi.service.BranchService;
 @RequestMapping("/admin")
 public class BranchController {
 	
-	private static final Logger logger=LogManager.getLogger(BranchController.class);
+	private static final Logger LOGGER=LogManager.getLogger(BranchController.class);
 	@Autowired
 	BranchService service;
 	
 	@PatchMapping("/deposit-to-branch/{ifscCode}") 
 	public ResponseEntity<Object> depositToBranch(@PathVariable  String ifscCode, @RequestBody double amount) {
-     logger.info("START");
+     LOGGER.info("START");
 		if(service.depositIntoBranch(ifscCode, amount)) {
-			 logger.warn("Amount successfully deposited to branch");
+			 LOGGER.warn("Amount successfully deposited to branch");
 			return CustomJsonResponse.generateResponse("Amount successfully deposited to branch", HttpStatus.OK,null);
 		}
-		logger.warn("BAD REQUEST");
+		LOGGER.warn("BAD REQUEST");
 		return CustomJsonResponse.generateResponse("Amount deposit failed", HttpStatus.CONFLICT,null);		
 	}
 	
 	@GetMapping("/view-all-branches") 
 	public ResponseEntity<Object> viewBranches() {
-		logger.info("START");
+		LOGGER.info("START");
 		List<Branch> branches = service.getAllBranches();
-		logger.info("END");
+		LOGGER.info("END");
 		return CustomJsonResponse.generateResponse("All branches", HttpStatus.OK,branches);		
 	}
 	

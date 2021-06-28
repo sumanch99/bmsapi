@@ -149,7 +149,6 @@ public class AccountDaoImpl implements AccountDao {
 			logger.info("END");
 			return true;
 		}catch(DataAccessException e) {
-			e.printStackTrace();
 			logger.error(e.getMessage());
 			return false;
 		}

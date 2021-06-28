@@ -8,6 +8,7 @@ import com.cts.bms.bmsapi.model.Customer;
 import com.cts.bms.bmsapi.model.DebitCard;
 import com.cts.bms.bmsapi.model.FixedDeposit;
 import com.cts.bms.bmsapi.model.Loan;
+import com.cts.bms.bmsapi.model.RecurringDeposit;
 
 public interface CustomerDao {
 	public double getFdInterestRate();
@@ -33,4 +34,10 @@ public interface CustomerDao {
 	public DebitCard getDebitCard(long cardNo);
 
 	public Customer loadCustomer(String username) throws BmsException;
+	
+	public boolean applyForRd(RecurringDeposit recurringDeposit) throws BmsException;
+	
+	public List<RecurringDeposit> getAllRecurringDeposits(Account account) throws BmsException;
+	
+	public double getRdInterestRate();
 }
