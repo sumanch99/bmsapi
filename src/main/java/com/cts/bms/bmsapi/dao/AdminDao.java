@@ -28,7 +28,7 @@ public interface AdminDao {
 
 	public boolean createAccount(Account account) throws BmsException;
 
-	public boolean approveLoanRequest(long loan_id, boolean isLoanApproved) throws BmsException;
+	public boolean approveLoanRequest(long loanId, boolean isLoanApproved) throws BmsException;
 
 	public boolean changeInterestRate(InterestRate irate) throws BmsException;
 

@@ -14,14 +14,16 @@ import com.cts.bms.bmsapi.exception.BmsException;
 import com.cts.bms.bmsapi.model.Account;
 import com.cts.bms.bmsapi.model.FixedDeposit;
 import com.cts.bms.bmsapi.model.InterestRate;
+import com.cts.bms.bmsapi.model.RecurringDeposit;
 import com.cts.bms.bmsapi.util.FixedDepositUtil;
+import com.cts.bms.bmsapi.util.RecurringDepositUtil;
 
 
 
 
 @Service
 public class PlanService {
-	private static final Logger logger=LogManager.getLogger(PlanService.class);
+	private static final Logger LOGGER=LogManager.getLogger(PlanService.class);
 	@Autowired
 	AdminDao adminDao;
 	
@@ -32,38 +34,69 @@ public class PlanService {
 	CustomerDao custDao;
 	
 	public List<InterestRate> viewAllPlans() {
-		logger.info("View Deatils");
+		LOGGER.info("View Deatils");
 		return adminDao.viewAllPlans();
 	}
 	
 	public boolean generateFixedDeposit(FixedDeposit fd) {
-		logger.info("START");
+		LOGGER.info("START");
 		fd.setInterest(custDao.getFdInterestRate());
 		double maturedAmount = FixedDepositUtil.getMaturedAmount(fd.getAmount(), fd.getInterest(), fd.getTenure());
 		fd.setMatured_amount(maturedAmount);
 		try {
 			custDao.applyForFd(fd);
-			logger.info("END");
+			LOGGER.info("END");
 			return true;
 		} catch (BmsException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
+			return false;
+		}
+	}
+	
+	public boolean generateRecurringDeposit(RecurringDeposit rd) {
+		LOGGER.info("START");
+		rd.setInterest(custDao.getRdInterestRate());
+		double maturedAmount = RecurringDepositUtil.getMaturedAmount(rd.getMonthlyAmount(), rd.getInterest(), rd.getTenure());
+		rd.setMaturedAmount(maturedAmount);
+		try {
+			custDao.applyForRd(rd);
+			LOGGER.info("END");
+			return true;
+		} catch (BmsException e) {
+			LOGGER.error(e.getMessage());
 			return false;
 		}
 	}
 	
 	public List<FixedDeposit> getAllFixedDeposits(long accountNo) {
-		logger.info("START");
+		LOGGER.info("START");
 		Account account = accountDao.getAccountWithAccountNumber(accountNo);
 		if(account!=null) {
 			try {
-				logger.info("END");
+				LOGGER.info("END");
 				return custDao.getAllFixedDeposits(account);
 			} catch (BmsException e) {
-				logger.error(e.getMessage());
+				LOGGER.error(e.getMessage());
 				return null;
 			}
 		}
-		logger.info("BAD-REQUEST");
+		LOGGER.info("BAD-REQUEST");
+		return null;
+	}
+	
+	public List<RecurringDeposit> getAllRecurringDeposits(long accountNo) {
+		LOGGER.info("START");
+		Account account = accountDao.getAccountWithAccountNumber(accountNo);
+		if(account!=null) {
+			try {
+				LOGGER.info("END");
+				return custDao.getAllRecurringDeposits(account);
+			} catch (BmsException e) {
+				LOGGER.error(e.getMessage());
+				return null;
+			}
+		}
+		LOGGER.info("BAD-REQUEST");
 		return null;
 	}
 }

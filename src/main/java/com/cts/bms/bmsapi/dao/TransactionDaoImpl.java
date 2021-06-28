@@ -34,7 +34,6 @@ public class TransactionDaoImpl implements TransactionDao {
 			logger.info("END");
 			return transactions;
 		}catch(DataAccessException e) {
-			e.printStackTrace();
 			logger.error(e.getMessage());
 			return null;
 		}
@@ -43,12 +42,14 @@ public class TransactionDaoImpl implements TransactionDao {
 
 	@Override
 	public List<Transaction> viewAllTransaction() {
+		logger.info("START");
 		try {
 			String query = "select * from transaction order by date desc";
 			List<Transaction> transactions = jdbcTemplate.query(query, new TransactionMapper());
+			logger.info("END");
 			return transactions;
 		}catch(DataAccessException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 			return null;
 		}
 	}

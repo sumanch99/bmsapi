@@ -23,11 +23,11 @@ import com.cts.bms.bmsapi.service.CustomerService;
 /*
  * Rest Controller to map all requests coming with customer prefix.
  */
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:4200,http://localhost:8080", allowedHeaders = "*")
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
-	private static final Logger logger=LogManager.getLogger(CustomerController.class);
+	private static final Logger LOGGER=LogManager.getLogger(CustomerController.class);
 	@Autowired
 	private CustomerService customerService;
 	
@@ -38,7 +38,7 @@ public class CustomerController {
 	 */
 	@PostMapping("/customer-signup")
 	public ResponseEntity<Object> createCustomerAccount(@RequestBody Customer customer){
-		logger.info("START");
+		LOGGER.info("START");
 		try{
 			/*
 			 * calling service logic to insert customer data in DB.
@@ -50,7 +50,7 @@ public class CustomerController {
 			customer.setPassword(encodedPassword);
 			Customer cust = customerService.createNewUser(customer);
 			if(cust==null) {
-				logger.error("UserID already exists");
+				LOGGER.error("UserID already exists");
 				return CustomJsonResponse.generateResponse("UserID already exists", HttpStatus.CONFLICT, customer);
 			}
 			
@@ -60,14 +60,14 @@ public class CustomerController {
 			 * with message UserID already exists because all other validations
 			 * is done earlier.
 			 */
-			logger.error("Account not found");
+			LOGGER.error("Account not found");
 			return CustomJsonResponse.generateResponse("Account not found", HttpStatus.CONFLICT, customer);
 		}
 		/*
 		 * On successful execution success message is sent along with created customer object in
 		 * custom JSON response.
 		 */
-		logger.info("User successfully created");
+		LOGGER.info("User successfully created");
 		return CustomJsonResponse.generateResponse("User successfully created", HttpStatus.CREATED, customer);
 	}
 	

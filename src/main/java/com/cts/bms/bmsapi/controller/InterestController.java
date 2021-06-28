@@ -26,7 +26,7 @@ import com.cts.bms.bmsapi.service.PlanService;
 @RestController
 @RequestMapping("/admin")
 public class InterestController {
-private static final Logger logger=LogManager.getLogger(InterestController.class);
+private static final Logger LOGGER=LogManager.getLogger(InterestController.class);
 	
 	@Autowired
 	AdminService service;
@@ -36,24 +36,24 @@ private static final Logger logger=LogManager.getLogger(InterestController.class
 	
 	@PostMapping("/change-interest-rate")
 	public ResponseEntity<Object> changeInterestRate(@RequestBody InterestRate irate ) {
-		logger.info("START");
+		LOGGER.info("START");
 		if(service.changeInterestRate(irate)) {
-			logger.info("END");
+			LOGGER.info("END");
 			return CustomJsonResponse.generateResponse("Interest rate changed", HttpStatus.OK, irate);
 		}
-		logger.error("Interest rate change unsuccessfull");
+		LOGGER.error("Interest rate change unsuccessfull");
 		return CustomJsonResponse.generateResponse("Interest rate change unsuccessfull", HttpStatus.EXPECTATION_FAILED, irate);
 	}
 	
 	@GetMapping("/view-interest-plans")
 	public ResponseEntity<Object> viewAllPlans() {
-		logger.info("START");
+		LOGGER.info("START");
 		List<InterestRate> plans = planService.viewAllPlans();
 		if(plans.isEmpty()) {
-			logger.warn("BAD REQUEST");
+			LOGGER.warn("BAD REQUEST");
 			return CustomJsonResponse.generateResponse("No Plans available", HttpStatus.OK,null);
 		}
-		logger.info("END");
+		LOGGER.info("END");
 		return CustomJsonResponse.generateResponse("Plans fetched", HttpStatus.OK, plans);
 	}
 }

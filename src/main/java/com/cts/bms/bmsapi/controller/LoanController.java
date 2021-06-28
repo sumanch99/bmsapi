@@ -27,7 +27,7 @@ import com.cts.bms.bmsapi.service.LoanService;
 @RestController
 @RequestMapping("/customer")
 public class LoanController {
-	private static final Logger logger=LogManager.getLogger( LoanController.class);
+	private static final Logger LOGGER=LogManager.getLogger( LoanController.class);
 	@Autowired
 	LoanService service;
 	
@@ -36,20 +36,20 @@ public class LoanController {
 	
 	@PostMapping("/apply-loan")
 	public ResponseEntity<Object> applyForLoan(@RequestBody Loan loan) {
-		logger.info("START");
+		LOGGER.info("START");
 		if(service.applyForLoan(loan)) {
-			logger.info("END");
+			LOGGER.info("END");
 			return CustomJsonResponse.generateResponse("Applying for loan successful", HttpStatus.OK, loan);
 		}
-		logger.error("Applying for loan not possible");
+		LOGGER.error("Applying for loan not possible");
 		return CustomJsonResponse.generateResponse("Applying for loan not possible", HttpStatus.EXPECTATION_FAILED, loan);
 	}
 	
 	@GetMapping("/view-my-loans/{userId}") 
 	public ResponseEntity<Object> getAllLoans(@PathVariable String userId) {
-		logger.info("START");
+		LOGGER.info("START");
 		List<Loan> loans = adminService.getAllApprovedLoans(userId);
-		logger.info("END");
+		LOGGER.info("END");
 		return CustomJsonResponse.generateResponse("All loans", HttpStatus.OK,loans);
 	}
 }

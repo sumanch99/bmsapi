@@ -19,7 +19,7 @@ import com.cts.bms.bmsapi.model.Customer;
 
 @Repository
 public class AccountDaoImpl implements AccountDao {
-	private static final Logger logger=LogManager.getLogger(AccountDaoImpl.class);
+	private static final Logger LOGGER=LogManager.getLogger(AccountDaoImpl.class);
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
@@ -31,52 +31,52 @@ public class AccountDaoImpl implements AccountDao {
 		 * This method checks wheather a bank account is available against the adhaar
 		 * number of the user.
 		 */
-		logger.info("START");
+		LOGGER.info("START");
 		String query = "select * from account where adhaar_no = ? and phonenumber = ?";
 
 		try {
 
 			List<Account> accounts = jdbcTemplate.query(query,
 					new Object[] { customer.getAdhaarNo(), customer.getPhoneNumber() }, new AccountMapper());
-			logger.info("END");
+			LOGGER.info("END");
 			return accounts;
 
 		} catch (DataAccessException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			throw new AdhaarNumberNotFoundException("No Data available");
 		}
 	}
 
 	@Override
 	public boolean depositIntoAccount(Account account, double amount) throws BmsException {
-		logger.info("START");
+		LOGGER.info("START");
 		String query = "update account set balance = balance + ? where account_no = ?";
 		String query2 = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
 		"values(?,?,?,?,?)";
 		try {
 			jdbcTemplate.update(query, new Object[] { amount, account.getAccNo() });
 			jdbcTemplate.update(query2, new Object[] { account.getAccNo(),null,amount,true,false });
-			logger.info("END");
+			LOGGER.info("END");
 			return true;
 		} catch (DataAccessException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			throw new BmsException("Deposit not possible");
 		}
 	}
 
 	@Override
 	public boolean withdrawFromAccount(Account account, double amount) throws BmsException {
-		logger.info("START");
+		LOGGER.info("START");
 		String query = "update account set balance = balance - ? where account_no = ?";
 		String query2 = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
 				"values(?,?,?,?,?)";
 		try {
 			jdbcTemplate.update(query, new Object[] { amount, account.getAccNo() });
 			jdbcTemplate.update(query2, new Object[] { account.getAccNo(),null,amount,false,false });
-			logger.info("END");
+			LOGGER.info("END");
 			return true;
 		} catch (DataAccessException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			throw new BmsException("Withdraw not possible");
 
 		}
@@ -85,17 +85,17 @@ public class AccountDaoImpl implements AccountDao {
 	
 	@Override
 	public boolean withDrawThroughDebitCard(Account account,double amount) throws BmsException{
-		logger.info("START");
+		LOGGER.info("START");
 		String query = "update account set balance = balance - ? where account_no = ?";
 		String query2 = "insert into transaction (from_account, to_account, amount, flag, atm_flag) "+
 				"values(?,?,?,?,?)";
 		try {
 			jdbcTemplate.update(query, new Object[] { amount, account.getAccNo() });
 			jdbcTemplate.update(query2, new Object[] { account.getAccNo(),null,amount,false,true });
-			logger.info("END");
+			LOGGER.info("END");
 			return true;
 		} catch (DataAccessException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			throw new BmsException("ATM Withdraw not possible");
 
 		}
@@ -103,35 +103,35 @@ public class AccountDaoImpl implements AccountDao {
 	
 	@Override
 	public Account getAccountWithAccountNumber(long accountNo) {
-		logger.info("START");
+		LOGGER.info("START");
 		try {
 			String query = "select * from account where account_no = " + accountNo;
 			Account account = jdbcTemplate.queryForObject(query, new AccountMapper());
-			logger.info("END");
+			LOGGER.info("END");
 			return account;
 		} catch (DataAccessException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			return null;
 		}
 	}
 	
 	@Override
 	public List<Account> getAllAccounts() {
-		logger.info("START");
+		LOGGER.info("START");
 		try {
 			String query = "select * from account";
 			List<Account> accounts = jdbcTemplate.query(query, new AccountMapper());
-			logger.info("END");
+			LOGGER.info("END");
 			return accounts;
 		} catch (DataAccessException e) {
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			return null;
 		}
 	}
 
 	@Override
 	public boolean accountToAccountTransfer(Account payeeAccount, Account receivingAccount, double amount) {
-		logger.info("START");
+		LOGGER.info("START");
 		try {
 			String query = "update account set balance = balance - ? where account_no = ?";
 			jdbcTemplate.update(query, new Object[] { amount, payeeAccount.getAccNo() });
@@ -146,11 +146,10 @@ public class AccountDaoImpl implements AccountDao {
 					null,
 					false
 			});
-			logger.info("END");
+			LOGGER.info("END");
 			return true;
 		}catch(DataAccessException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			LOGGER.error(e.getMessage());
 			return false;
 		}
 	}

@@ -24,34 +24,34 @@ import com.cts.bms.bmsapi.service.ATMService;
 @RestController
 public class ATMController {
 	
-	private static final Logger logger=LogManager.getLogger( ATMController.class);
+	private static final Logger LOGGER=LogManager.getLogger( ATMController.class);
 	@Autowired
 	ATMService atmService;
 	
 	@PostMapping("/atm-corner/withdraw/{amount}")
 	public ResponseEntity<Object> withdrawFromAccount(@PathVariable double amount,@RequestBody DebitCard card) {
-		logger.info("START");
+		LOGGER.info("START");
 		if(atmService.validateDebitCardWithDraw(card, amount)) {
 			if(atmService.withdrawWithDebitCard(card, amount)) {
-				logger.info("END");
+				LOGGER.info("END");
 				return CustomJsonResponse.generateResponse("Amount successfully withdrawn", HttpStatus.OK, amount);
 			}
-			logger.error("Process failed");
+			LOGGER.error("Process failed");
 			return CustomJsonResponse.generateResponse("Process failed", HttpStatus.BAD_GATEWAY,card);
 		}
-		logger.warn("BAD REQUEST");
+		LOGGER.warn("BAD REQUEST");
 		return CustomJsonResponse.generateResponse("Process cannot be completed. Invalid input.", HttpStatus.BAD_REQUEST, null);
 	}
 	
 	@PostMapping("/atm-corner/check-balance")
 	public ResponseEntity<Object> checkBalance(@RequestBody DebitCard card) {
-		logger.info("START");
+		LOGGER.info("START");
 		try {
 			double balance  = atmService.getDebitCardBalance(card);
-			logger.info("END");
+			LOGGER.info("END");
 			return CustomJsonResponse.generateResponse("Your account balance is", HttpStatus.OK, balance);
 		}catch(BmsException e) {
-			logger.warn("BAD REQUEST");
+			LOGGER.warn("BAD REQUEST");
 			return CustomJsonResponse.generateResponse("Incorrect Card Details", HttpStatus.BAD_REQUEST, null);
 		}
 		

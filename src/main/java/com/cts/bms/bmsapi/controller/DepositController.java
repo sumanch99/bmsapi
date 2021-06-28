@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.bms.bmsapi.model.FixedDeposit;
+import com.cts.bms.bmsapi.model.RecurringDeposit;
 import com.cts.bms.bmsapi.response.CustomJsonResponse;
 import com.cts.bms.bmsapi.service.PlanService;
 
@@ -23,31 +24,53 @@ import com.cts.bms.bmsapi.service.PlanService;
 @RestController
 @RequestMapping("/customer")
 public class DepositController {
-	private static final Logger logger=LogManager.getLogger(DepositController.class);	
+	private static final Logger LOGGER=LogManager.getLogger(DepositController.class);	
 	@Autowired
 	PlanService service;
 	
 	@PostMapping("/apply-fd")
 	public ResponseEntity<Object> applyForFd(@RequestBody FixedDeposit fd) {
-		logger.info("START");
+		LOGGER.info("START");
 		if(service.generateFixedDeposit(fd)) {
-			logger.info("END");
+			LOGGER.info("END");
 			return CustomJsonResponse.generateResponse("Fixed deposit generated successfully", HttpStatus.OK, fd);
 		}
-		logger.warn("BAD-REQUEST");
+		LOGGER.warn("BAD-REQUEST");
 		return CustomJsonResponse.generateResponse("Fixed deposit cannot be generated.", HttpStatus.BAD_REQUEST, null);
 	}
 	
 	@GetMapping("/view-my-fd/{accountNo}")
 	public ResponseEntity<Object> viewMyFd(@PathVariable long accountNo) {
-		logger.info("START");
+		LOGGER.info("START");
 		List<FixedDeposit> fds = service.getAllFixedDeposits(accountNo);
 		if(fds!=null) {
-			logger.info("END");
+			LOGGER.info("END");
 			return CustomJsonResponse.generateResponse("Fixed deposits", HttpStatus.OK, fds);
 		}
-		logger.warn("BAD-REQUEST");
+		LOGGER.warn("BAD-REQUEST");
 		return CustomJsonResponse.generateResponse("Fixed deposits not found", HttpStatus.NOT_FOUND, null);
 	}
 	
+	@PostMapping("/apply-rd")
+	public ResponseEntity<Object> applyForRd(@RequestBody RecurringDeposit rd) {
+		LOGGER.info("START");
+		if(service.generateRecurringDeposit(rd)) {
+			LOGGER.info("END");
+			return CustomJsonResponse.generateResponse("Recurring deposit generated successfully", HttpStatus.OK, rd);
+		}
+		LOGGER.warn("BAD-REQUEST");
+		return CustomJsonResponse.generateResponse("Recurring deposit cannot be generated.", HttpStatus.BAD_REQUEST, null);
+	}
+	
+	@GetMapping("/view-my-rd/{accountNo}")
+	public ResponseEntity<Object> viewMyRd(@PathVariable long accountNo) {
+		LOGGER.info("START");
+		List<RecurringDeposit> rds = service.getAllRecurringDeposits(accountNo);
+		if(rds!=null) {
+			LOGGER.info("END");
+			return CustomJsonResponse.generateResponse("Recurring deposits", HttpStatus.OK, rds);
+		}
+		LOGGER.warn("BAD-REQUEST");
+		return CustomJsonResponse.generateResponse("Recurring deposits not found", HttpStatus.NOT_FOUND, null);
+	}
 }

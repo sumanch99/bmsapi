@@ -14,16 +14,16 @@ import com.cts.bms.bmsapi.response.CustomJsonResponse;
 @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 public class LoginController {
-	private static final Logger logger=LogManager.getLogger(LoginController.class);	
+	private static final Logger LOGGER=LogManager.getLogger(LoginController.class);	
 	
 	@GetMapping("/admin/log-in")
 	public ResponseEntity<Object> adminLogin() {
-		logger.info("ADMIN LOGIN");
+		LOGGER.info("ADMIN LOGIN");
 		return CustomJsonResponse.generateResponse("Login successfull", HttpStatus.OK, null);
 	}
 	@GetMapping("/customer/log-in")
 	public ResponseEntity<Object> customerLogin() {
-		logger.info("CUSTOMER LOGIN");
+		LOGGER.info("CUSTOMER LOGIN");
 		return CustomJsonResponse.generateResponse("Login successfull", HttpStatus.OK, null);
 	}
 	
